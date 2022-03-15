@@ -34,6 +34,7 @@ etiquetas:
 Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
 
 > **Links Úteis**:
+> - [Microfundamento: Gerência de Configuração] (https://pucminas.instructure.com/courses/87878)
 > - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
 > - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
 >  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
@@ -63,7 +64,7 @@ Coloque  informações sobre detalhes da implementação do Scrum seguido pelo g
  
 > **Links Úteis**:
 > - [Planejamento e Gestáo Ágil de Projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards
+> - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
 > - [Project management, made simple](https://github.com/features/project-management/)
 > - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
 > - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
