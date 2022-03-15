@@ -40,6 +40,28 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 > - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
 > - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
+## Modelagem do Processo de Negócio 
+
+### Análise da Situação Atual
+
+Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+
+### Descrição Geral da Proposta
+
+Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+
+### Processo 1 – NOME DO PROCESSO
+
+Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
+
+![Processo 1](img/02-bpmn-proc1.png)
+
+### Processo 2 – NOME DO PROCESSO
+
+Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
+
+![Processo 2](img/02-bpmn-proc2.png)
+
 ## Requisitos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
