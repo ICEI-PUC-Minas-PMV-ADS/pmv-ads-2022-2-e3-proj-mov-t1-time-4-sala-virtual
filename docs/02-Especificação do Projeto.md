@@ -161,26 +161,57 @@ A matriz deve contemplar todos os elementos relevantes que fazem parte do sistem
 
 # Gerenciamento de Projeto
 
-De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar projetos, e que caracterizam a multidisciplinaridade envolvida, são: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições, Partes Interessadas. Para desenvolver projetos um profissional deve se preocupar em gerenciar todas essas dez áreas. Elas se complementam e se relacionam, de tal forma que não se deve apenas examinar uma área de forma estanque. É preciso considerar, por exemplo, que as áreas de Escopo, Cronograma e Custos estão muito relacionadas. Assim, se eu amplio o escopo de um projeto eu posso afetar seu cronograma e seus custos.
+Observando o cronograma geral dos entregavéis do projeto, figura abaixo, junto aos requisitos, foi possível a criação de um plano de gestão que contempla a gestão de tempo e recursos que serão utilizados durante o projeto.
+
+![Cronograma geral PUC](img/cronograma-geral-PUC.JPG)
 
 ## Gerenciamento de Tempo
 
-Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o gerente de projetos agenda e coordena tarefas dentro de um projeto para estimar o tempo necessário de conclusão.
+O prazo total para a entrega do projeto é de 128 dias a partir do dia 01/08/2022, sem descontar os finais de semana e feriados, assim seguindo o cronograma geral, foi possível elaborar uma tabela com os marcos de início e fim das tarefas planejadas, conforme abaixo:
 
-![Diagrama de rede simplificado notação francesa (método francês)](img/02-diagrama-rede-simplificado.png)
+| Projeto                                     | Inicio       | Fim         |
+|---------------------------------------------|--------------|-------------|
+|Documentação do Projeto                      | 01/08/2022   | 07/12/2022  |
+|Design de Telas                              | 12/09/2022   | 27/09/2022  |
+|Desenvolvimento do Banco de Dados            | 08/08/2022   | 31/08/2022  |
+|Programação de Funiconalidades: Cliente      | 27/09/2022   | 20/11/2022  |
+|Programação de Funiconalidades: Especialista | 27/09/2022   | 20/11/2022  |
+|Conexão da API ao Frontend                   | 17/10/2022   | 20/11/2022  |
+|Elaboração do plano de testes                | 27/09/2022   | 09/10/2022  |
+|Testes de usabilidade                        | 10/10/2022   | 27/11/2022  |
+|Testes de funcionalidades                    | 10/10/2022   | 27/11/2022  |
+|Elaboração da apresentação do projeto        | 30/11/2022   | 07/12/2022  |
 
-O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
+Para facilitar a visualização das atividades foi elaborado um gráfico de Gantt para mostrar o fluxo das atividades:
 
-![Gráfico de Gantt](img/02-grafico-gantt.png)
+![Diagrama de atividades](img/diagrama-atividades.JPG)
 
 ## Gerenciamento de Equipe
 
-O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
+A equipe será separada em três frentes: Eq. Backend, Eq. Frontend-Client, Eq. Frontend-Specialist, essas três equipes são responsáveis pela programação de backend em ambiente C#.net, Programação das funcionalidades em ambiente React Native e design das telas com foco na jornada do cliente no aplicativo e Programação das funcionalidades em ambiente React Native e design das telas com foco na jornada do especialista no aplicativo. Sendo essas equipes gerenciadas pelo Scrum Master e pelo Product Owner.
 
-![Simple Project Timeline](img/02-project-timeline.png)
+Com base nas equipes e cronograma de gestão de tempo, as responsabilidades de cada equipe foram atribuidas de acordo com a imagem abaixo:
+
+![Tabela de atribuições das equipes](img/tabela-atribuições-equipes.JPG)
 
 ## Gestão de Orçamento
 
-O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
+Observando os custos médios no site Glassdoor, foi encontrado os salários médios para os cargos atribuidos ao projeto, sabendo que a demanda total em horas do projeto é de 540 horas descontando os finais de semana e com uma jornada de 6 horas/ dia, foi possível elaborar uma tabela contendo o h-h, homem-hora dos recursos humanos necessários para a elaboração do projeto.
 
-![Orçamento](img/02-orcamento.png)
+| Função                   | H-h   |
+|--------------------------|-------|
+| Scrum Master             | 60,61 |
+| Product Owner            | 60,61 |
+| Programador .net         | 35,71 |
+| Programador React Native | 22,73 |
+
+Com equipamentos, foram atribuidos os custos de notebooks entre outros para o auxílio do trabalho. Os custos de software foi computado os custos de software para o auxílio a programação dos membros e desenvolvimento de software, como licenças de IDE's, utilização de API's entre outros, já os custos de operação são ligados aos custos com servidor web que comporte a aplicação, nesse caso foi escolhido a utilização do Microsoft Azure. Ao final foi acresentado um adicional de 20% aos custos para comportar possíveis oscilações de custos durante a elaboração do projeto.
+
+| Recursos                   | Custos (R$)    |
+|----------------------------|----------------|
+| R. Humanos                 |     97.011,82  |
+| R. de Equipamentos         |     19.109,93  |
+| R. de Softwares            |      3.815,80  |
+| R. de Operação             |     16.778,85  |
+| Custo Total                | R$ 136.716,40  |
+| Custo Final de Projeto     | R$ 164.059,67  |
