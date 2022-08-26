@@ -64,12 +64,17 @@ Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em segu
 
 ## Indicadores de Desempenho
 
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores. 
+Para análise e monitoramento do desempenho do negócio, com o intuito de auxiliar na tomada de decisões e planejamentos estratégicos, os seguintes indicadores foram definidos: 
 
-Usar o seguinte modelo: 
+| Indicador | Objetivos | Descrição | Cálculo | Fonte dos Dados | Perspectiva |
+|-----------|-----------|-----------|---------|-----------------|-------------|
+| Atendimentos por categoria (share)| Identificar as categorias que possuem maior concentração de atendimentos| Porcentagem de atendimentos por categoria em relação a quantidade de atendimentos totais| Atendimentos da categoria X / Total de atendimentos | Tabela Schedule, Appointment Specialty e Category | Identificar potenciais especialistas |
+| Novos clientes |	Monitorar a quantidade de clientes novos no mês para desenvolver estratégias de captação |	Número absoluto de clientes novos |	- |	Tabela Client |	Aumentar a captação de clientes |
+| Percentual de clientes ativos | Traçar estratégias de retenção a partir da quantidade de usuários que efetivamente utilizam a plataforma | Porcentagem de clientes que realizaram atendimento em relação a clientes cadastrados na plataforma | Clientes que efeturam atendimento no mês / Clientes cadastrados no app | Tabela Client e Schedule | Melhorar a conversão de clientes ativos e aumentar a retenção |
+| Percentual de especialistas ativos | Aumentar a conversão de especialistas que realizam atendimentos | Identificar o percentual de especialistas cadastrados |	Especialistas que realizaram atendimento no mês / especialistas cadastrados |	Tabela Specialist e Schedule |	Melhorar a conversão de especialistas ativos |
+| *Churn* de especialistas |	Analisar especialistas que optaram por deixar de utilizar a plataforma, a fim de reduzir este número |	Especialistas que não realizam atendimentos há mais de 45 dias e especialistas que optaram por excluir a conta |	Especialistas que não realizam atendimentos há mais de 45 dias / especialistas ativos |	Tabela Specialist e Schedule |	Diminuir o *churn* dos especialistas |
+| Receita mensal |	Monitorar a receita mensal para criar estratégias de rentabilidade |	Receita gerada pelos espeacialistas através do aluguel das salas virtuais |	Soma dos pagamentos realizados no mês |	Tabela Payments |	Aumentar a receita mensal |
 
-![Indicadores de Desempenho](img/02-indic-desemp.png)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
 
 ## Requisitos
 
