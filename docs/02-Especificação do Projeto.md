@@ -203,12 +203,12 @@ Com base nas equipes e cronograma de gestão de tempo, as responsabilidades de c
 
 Observando os custos médios no site Glassdoor, foi encontrado os salários médios para os cargos atribuidos ao projeto, sabendo que a demanda total em horas do projeto é de 540 horas descontando os finais de semana e com uma jornada de 6 horas/ dia, foi possível elaborar uma tabela contendo o h-h, homem-hora dos recursos humanos necessários para a elaboração do projeto.
 
-| Função                   | H-h   |
-|--------------------------|-------|
-| Scrum Master             | 60,61 |
-| Product Owner            | 60,61 |
-| Programador .net         | 35,71 |
-| Programador React Native | 22,73 |
+| Função                   | H-h (R$/hora)  |
+|--------------------------|----------------|
+| Scrum Master             | 60,61          |
+| Product Owner            | 60,61          |
+| Programador .net         | 35,71          |
+| Programador React Native | 22,73          |
 
 Com equipamentos, foram atribuidos os custos de notebooks entre outros para o auxílio do trabalho. Os custos de software foi computado os custos de software para o auxílio a programação dos membros e desenvolvimento de software, como licenças de IDE's, utilização de API's entre outros, já os custos de operação são ligados aos custos com servidor web que comporte a aplicação, nesse caso foi escolhido a utilização do Microsoft Azure. Ao final foi acresentado um adicional de 20% aos custos para comportar possíveis oscilações de custos durante a elaboração do projeto.
 
