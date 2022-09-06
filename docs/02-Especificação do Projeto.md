@@ -217,6 +217,10 @@ A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualizaç
 
 A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
 
+![Matriz de Rastreabilidade](img/02-matriz-rastreabilidade.png)
+
+**Explicação**:
+
 - A repetição do RF-001 se dá pelo fato de para acessar o aplicativo é necessário possuir login.
 - A tela referente no RF-008 está localizado na barra de navegação citado no RF-006.
 - Para possuir a opção de filtragem de especilidades (RF-010) é necessario anteriormente possuir a filtragem de categorias (RF-009).
@@ -225,16 +229,6 @@ A matriz deve contemplar todos os elementos relevantes que fazem parte do sistem
 - Ao aceitar entrar na consulta (RF-022) e não estiver ambos presentes haverá uma tela espera (RF-021).
 - A repetição do RNF-008 se dá pelo fato de a aplicação informar ao usuário sobre erros que impeçam o funcionamento correto do aplicativo.
 - o protocolo citado no RNF-003 será utilizado no RF-019.
-
-
-
-![Matriz de Rastreabilidade](img/02-matriz-rastreabilidade.png)
-
-> **Links Úteis**:
->
-> - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
-> - [Verificação da rastreabilidade de requisitos usando a integração do IBM Rational RequisitePro e do IBM ClearQuest Test Manager](https://developer.ibm.com/br/tutorials/requirementstraceabilityverificationusingrrpandcctm/)
-> - [IBM Engineering Lifecycle Optimization – Publishing](https://www.ibm.com/br-pt/products/engineering-lifecycle-optimization/publishing/)
 
 # Gerenciamento de Projeto
 
