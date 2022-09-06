@@ -228,7 +228,7 @@ A matriz deve contemplar todos os elementos relevantes que fazem parte do sistem
 
 
 
-![Exemplo de matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
+![Matriz de Rastreabilidade](img/02-matriz-rastreabilidade.png)
 
 > **Links Úteis**:
 >
