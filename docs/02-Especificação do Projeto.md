@@ -217,6 +217,17 @@ A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualizaç
 
 A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
 
+- A repetição do RF-001 se dá pelo fato de para acessar o aplicativo é necessário possuir login.
+- A tela referente no RF-008 está localizado na barra de navegação citado no RF-006.
+- Para possuir a opção de filtragem de especilidades (RF-010) é necessario anteriormente possuir a filtragem de categorias (RF-009).
+- A tela referente no RF-016 terá um atalho da mesma na tela do RF-014.
+- O RF-015 seria uma pré visulaização da tela RF-18.
+- Ao aceitar entrar na consulta (RF-022) e não estiver ambos presentes haverá uma tela espera (RF-021).
+- A repetição do RNF-008 se dá pelo fato de a aplicação informar ao usuário sobre erros que impeçam o funcionamento correto do aplicativo.
+- o protocolo citado no RNF-003 será utilizado no RF-019.
+
+
+
 ![Exemplo de matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
 
 > **Links Úteis**:
