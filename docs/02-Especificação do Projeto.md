@@ -46,15 +46,13 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional.
+Atualmente, os serviços prestados à distância ocorrem em plataformas isoladas. É oportuno citar os aplicativos de consultas médicas, de terapias, de atividades físicas e de educação por exemplo. Cada serviço resulta na instalação de um aplicativo diferente no dispositivo móvel do usuário.
+
+Distinguindo-se das soluções existentes, esse projeto propõe receber variados segmentos de serviços em um só aplicativo. Ele é visto na modelagem do processo de negócio conferindo maior entendimento por meio dos diagramas elaborados.
 
 ### Descrição Geral da Proposta
 
-O principal objetivo da proposta é a modelagem dos processos de negócio para que estes estejam alinhados com as estratégias pretendidas.
-
-Propõe-se também demonstrar o valor de cada processo para que todos os envolvidos no negócio tenham o mesmo entendimento acerca do funcionamento de uma atividade tendo-a como apoio o para o desenvolvimento da aplicação.
-
-A modelagem propõe uma rotina de melhoria contínua do processo no contexto de toda a organização.
+A concepção da modelagem dos processos de negócio neste projeto tem como principais alvos o alinhamento das estratégias pretendidas, a demonstração do valor de cada processo e o comum entendimento acerca do funcionamento de uma atividade tendo-a como apoio para o desenvolvimento da aplicação. Propõe-se, com ela, a criação de uma rotina de melhoria contínua do processo no contexto de toda a organização.
 
 ### Processo 1 – Efetuar login
 
