@@ -243,8 +243,8 @@ O prazo total para a entrega do projeto é de 128 dias a partir do dia 01/08/202
 | Documentação do Projeto                      | 01/08/2022 | 07/12/2022 |
 | Design de Telas                              | 12/09/2022 | 27/09/2022 |
 | Desenvolvimento do Banco de Dados            | 08/08/2022 | 31/08/2022 |
-| Programação de Funiconalidades: Cliente      | 27/09/2022 | 20/11/2022 |
-| Programação de Funiconalidades: Especialista | 27/09/2022 | 20/11/2022 |
+| Programação de Funcionalidades: Cliente      | 27/09/2022 | 20/11/2022 |
+| Programação de Funcionalidades: Especialista | 27/09/2022 | 20/11/2022 |
 | Conexão da API ao Frontend                   | 17/10/2022 | 20/11/2022 |
 | Elaboração do plano de testes                | 27/09/2022 | 09/10/2022 |
 | Testes de usabilidade                        | 10/10/2022 | 27/11/2022 |
