@@ -188,7 +188,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir:
 
 A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio.
 
-A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
+A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura a seguir.
 
 ![Matriz de Rastreabilidade](img/02-matriz-rastreabilidade.png)
 
@@ -196,12 +196,17 @@ A matriz deve contemplar todos os elementos relevantes que fazem parte do sistem
 
 - A repetição do RF-001 se dá pelo fato de para acessar o aplicativo é necessário possuir login.
 - A tela referente no RF-008 está localizado na barra de navegação citado no RF-006.
+- O cliente após agendendar uma consulta (RF-012) O aplicativo deve fornecer uma tela inicial contendo suas próximas consultas (RF-008).
 - Para possuir a opção de filtragem de especilidades (RF-010) é necessario anteriormente possuir a filtragem de categorias (RF-009).
+- O profissional conseguindo fazer a personalização do seu perfil (RF-017) o cliente poderá saber mais sobre o profissional (RF-011).
 - A tela referente no RF-016 terá um atalho da mesma na tela do RF-014.
-- O RF-015 seria uma pré visulaização da tela RF-18.
+- O RF-015 seria uma pré-visualização da tela RF-018.
 - Ao aceitar entrar na consulta (RF-022) e não estiver ambos presentes haverá uma tela espera (RF-021).
+- Caso haja quedas de rede ou falhas técnicas o aplicativo deve possibilitar a reconexão (RF-023), com isso possibilitanto com que entre novamente na colsulta (RF-022).
+- A repetição do RF-025 se dá pelo fato de ser uma tela de carregamento (spinner).
+- O protocolo citado no RNF-003 será utilizado no RF-019.
 - A repetição do RNF-008 se dá pelo fato de a aplicação informar ao usuário sobre erros que impeçam o funcionamento correto do aplicativo.
-- o protocolo citado no RNF-003 será utilizado no RF-019.
+- (RNF-009)Será um sistema de segurança para proteger as informações dos usuários (RF-001).
 
 # Gerenciamento de Projeto
 
