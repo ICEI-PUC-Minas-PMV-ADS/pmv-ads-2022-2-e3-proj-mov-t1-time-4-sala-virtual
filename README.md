@@ -1,23 +1,26 @@
-# TÍTULO DO PROJETO
+# Sala Virtual
 
-`CURSO`
+`Análise e desenvolvimento de sistemas`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de uma Aplicação Móvel em um Ambiente de Negócio`
 
-`SEMESTRE`
+`3° Semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto visa a criação de uma plataforma virtual que irá conectar profissionais de diversas áreas aos seus clientes de forma virtual e segura para ambas as partes.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Arthur Alves Rocha de Souza
+* Brunna Alves Lage Silva
+* Davison Cavalcante Barros
+* Mateus Cunha Melo
+* Paloma Chaves Silva
+* Pedro Thiago Rodrigues Santos
+* Sabrina Chaves Silva
 
 ## Orientador
 
-* Nome completo do professor 1
+* Will Ricardo dos Santos Machado
 
 ## Instruções de utilização
 
