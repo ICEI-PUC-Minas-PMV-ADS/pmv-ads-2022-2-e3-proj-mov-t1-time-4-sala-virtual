@@ -1,46 +1,23 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
-
+Nunca a necessidade de empreender no meio digital se fez tão necessária nos últimos anos. Seja pela facilidade de divulgação, o poder de atrair público de áreas remotas, ou pelas óbvias questões sanitárias que impediram o trabalho presencial (inclusive causando desemprego e falência de negócios). De outro lado, a volta ao normal implica mudanças de rotina que muitas vezes impossibilitam as pessoas de terem o tempo para realizar uma consulta médica, ter uma aula particular ou praticar hábitos saudáveis, uma vez que deslocamentos e a jornada de trabalho consomem grande parte do tempo hábil para tanto.
+ 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Como contextualizado anteriormente, podemos observar dois problemas principais: os custos e a dificuldade de se manter um negócio físico, aliados à falta de divulgação otimizada, impactando negativamente nos números de clientes a serem captados; e a falta de tempo para se dedicar ao deslocamento e às salas de espera de consultórios, cursos e escritórios, por parte dos clientes. Em todos os casos, no entanto, é preciso atentar para problemas de segurança trazidos pelas chamadas de vídeo por aplicativos como Google Meet e Zoom, uma vez que não estão respaldadas na reserva do pagamento até que a consulta seja terminada efetivamente, trazendo riscos tanto para o profissional, que pode não receber pelo serviço prestado, quanto para o cliente, que pode não ter o serviço pelo que pagou.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Diante disso, a presença de uma plataforma online, onde seja possível conectar profissionais das mais diversas áreas a clientes interessados em seus serviços, de uma forma totalmente digital e remota, é muitíssimo bem-vinda. O profissional não precisa se preocupar com custos de aluguel num espaço físico, pode ampliar seu público exponencialmente e conta com a segurança de que o pagamento será efetivado ao prestar seu serviço. O cliente consegue encaixar melhor suas consultas no dia-a-dia, haja vista o horário flexível, bem como consolidar todos os seus atendimentos em um só lugar.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Como objetivos específicos, a plataforma deverá possibilitar a reunião de um profissional e um cliente por meio de chamada de vídeo, mediante agendamento. Ademais, o cliente poderá encontrar profissionais novos por meio de um catálogo filtrável. Por parte do profissional, a plataforma deverá possibilitar a gestão de sua agenda, bem como fazer o acompanhamento de seus ganhos e próximos atendimentos. A fim de garantir a segurança, a plataforma deverá fornecer um meio de pagamento seguro, em que só será possível agendar um atendimento por meio de pagamento prévio, que só será direcionado ao profissional ao finalizar o atendimento e receber a avaliação do serviço prestado.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Este trabalho a que se propõe a fazer pretende explorar um mercado em ascensão, que tem como principais players o Superprof, no cenário de aulas particulares; Zenklub, no âmbito de terapias; e Vida V para consultas médicas particulares à distância. Poder-se-ia citar outros segmentos mais amplos, como Workana, 99freelas, GetNinjas e Fiverr, na contratação de freelancers, no entanto, a modalidade a se explorar é a dos atendimentos e consultorias em tempo real, portanto, a comparação a ser feita é com as empresas citadas anteriormente.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+A fim de diversificar o público alvo, sem restringir o segmento a ser explorado, pretende-se criar uma startup com um produto mínimo viável (MVP) que contemple diversas áreas, como educação, saúde, advocacia, artes e consultorias, bem como suas áreas conexas. Poder compilar diversos profissionais em um só aplicativo cria um ecossistema de utilização integrado, possibilitando uma análise de performance dos produtos ofertados, assim como a possibilidade de expandir o catálogo oferecido e melhorar o produto.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Sendo assim, pretende-se atingir um público-alvo diverso, que vai de profissionais das áreas citadas anteriormente, que desejam ingressar no mercado digital ou que não têm dinheiro para investir em um negócio próprio, a clientes interessados nos serviços ofertados, de sorte que a segurança no processo seja garantida e centralizada numa plataforma transparente e competitiva para se prestar serviços e ser atendido. Em um nível macro, portanto, tem-se duas entidades a serem tratadas: profissionais, que prestarão os serviços; e clientes, que irão contratar os serviços ofertados.
