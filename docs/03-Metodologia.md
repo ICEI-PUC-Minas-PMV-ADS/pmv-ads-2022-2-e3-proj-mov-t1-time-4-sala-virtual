@@ -63,6 +63,11 @@ Apresente a divisão de papéis entre os membros do grupo.
 
 ### Processo
 
+Com as equipes de desenvolvimento, serão realizadas entregas de artefatos do projeto por parte dos membros em reuniões informais, em aplicativos de reunião, tendo uma reunião semanal com os stakeholders para verificação do andamento do projeto e elucidar qualquer dificuldade no encaminhamento do projeto. 
+
+Os artefatos de entrega, são as documentações pertinentes as principais etapas do projeto,assim como as telas do aplicativo, tanto por parte do usuário como por parte do especialista. Tendo em cada etapa subentregas de parte do projeto que cada membro será responsável, todo o backlog dessa parte está disponível no aplicativo Trello.
+
+
 Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
  
 > **Links Úteis**:
@@ -74,7 +79,23 @@ Coloque  informações sobre detalhes da implementação do Scrum seguido pelo g
 > - [Tutorial Slack](https://slack.com/intl/en-br/)
 
 ### Ferramentas
-*Trello
+
+Nessa etapa do processo podemos dividir as ferramentas utilizadas para o desenvolvimento do projeto em:
+
+Ferramentas de Gestão e Auxiliares:
+
+- Trello: Utilizado para a gestão dos quadros do Kanbam;
+- Figma: Utilizado para o desenvolvimento do design das telas do aplicativo, wireframes e modelos de relacionamento;
+
+Ferramentas de desenvolvimento:
+
+- IDE: As ide's ficaram a cargo dos membros da equipe, podendo ser o Visual Code Studio, Rider ou outra plataforma qual o desenvolvedor se sinta familiarizado;
+- Github: Gestão de versionamento do código;
+- Docker: Criação de containers para o desenvolvimento da API;
+- Postman/Swagger: Teste de requisições da API;
+- Azure: Hospedagem do serviço da API;
+
+
 As ferramentas empregadas no projeto são:
 
 - Editor de código.
