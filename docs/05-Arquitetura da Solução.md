@@ -43,9 +43,13 @@ Pode-se ver na figura a seguir o relacionamento entre as etapas e as tecnologias
 ![Tecnologias Utilizadas](img/tecnologias-utilizadas.png)
 
 Para o planejamento fez-se uso do Visual Studio Code como editor de texto a fim de elaborar a documentação do projeto. É ainda nessa etapa que se inicia a utilização do Trello, ferramenta que permite que a equipe visualize as tarefas, gerencie prazos, atividades concluídas.
+
 Com o planejamento adequado e já tendo examinado os requisitos, parte-se para a etapa de concepção do design, pois já é possível considerar as configurações necessárias para atender às necessidades da aplicação. Para isso, a ferramenta Figma foi empregue. Trata-se de um editor online para criação de protótipos e design de experiência do usuário. Neste momento são criados os templates da aplicação de forma colaborativa, uma vez que a ferramenta permite o trabalho em conjunto.
+
 Na fase de Desenvolvimento a equipe constrói o código e realiza revisão para garantir confiabilidade em todos os aspectos da solução. O código foi desenvolvido utilizando ferramenta Expo, que já traz consigo muitos recursos de forma nativa e integrada do React Native que tem como linguagem o JavaScript. O back-end da aplicação foi criado com a linguagem C#. Para armazenar e controlar versões a equipe aderiu o uso do sistema GitHub.
+
 A utilização da ferramenta Docker se faz necessária para obter um ambiente em que os sistemas e versões diferentes conversem entre si.
+
 Por fim, para o deploy, a equipe determinou o uso da ferramenta Microsoft Azure para publicar o aplicativo e dados.
 
 ## Hospedagem
