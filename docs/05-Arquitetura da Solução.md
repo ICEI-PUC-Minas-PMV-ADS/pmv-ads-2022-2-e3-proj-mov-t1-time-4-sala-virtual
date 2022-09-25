@@ -26,7 +26,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER�
 ## Esquema Relacional
 
 O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
- 
+
 As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Relacional”.
 
 > - [Criando um modelo relacional - Documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/10.2.2?topic=designer-creating-relational-model)
@@ -37,9 +37,16 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+Para esse projeto foi escolhido um conjunto de tecnologias para todas as etapas do ciclo de desenvolvimento da aplicação.
+Pode-se ver na figura a seguir o relacionamento entre as etapas e as tecnologias.
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+![Tecnologias Utilizadas](img/tecnologias-utilizadas.png)
+
+Para o planejamento fez-se uso do Visual Studio Code como editor de texto a fim de elaborar a documentação do projeto. É ainda nessa etapa que se inicia a utilização do Trello, ferramenta que permite que a equipe visualize as tarefas, gerencie prazos, atividades concluídas.
+Com o planejamento adequado e já tendo examinado os requisitos, parte-se para a etapa de concepção do design, pois já é possível considerar as configurações necessárias para atender às necessidades da aplicação. Para isso, a ferramenta Figma foi empregue. Trata-se de um editor online para criação de protótipos e design de experiência do usuário. Neste momento são criados os templates da aplicação de forma colaborativa, uma vez que a ferramenta permite o trabalho em conjunto.
+Na fase de Desenvolvimento a equipe constrói o código e realiza revisão para garantir confiabilidade em todos os aspectos da solução. O código foi desenvolvido utilizando ferramenta Expo, que já traz consigo muitos recursos de forma nativa e integrada do React Native que tem como linguagem o JavaScript. O back-end da aplicação foi criado com a linguagem C#. Para armazenar e controlar versões a equipe aderiu o uso do sistema GitHub.
+A utilização da ferramenta Docker se faz necessária para obter um ambiente em que os sistemas e versões diferentes conversem entre si.
+Por fim, para o deploy, a equipe determinou o uso da ferramenta Microsoft Azure para publicar o aplicativo e dados.
 
 ## Hospedagem
 
