@@ -16,26 +16,32 @@ Os ambientes para desenvolvimento dos artefatos do projeto são apontados no qua
 
 ## Controle de Versão
 
-A ferramenta de controle de versão adotada no projeto foi o
-[Git](https://git-scm.com/), sendo que o [Github](https://github.com)
-foi utilizado para hospedagem do repositório.
+Para assegurar a qualidade da aplicação, em função de suas modificações, é necessária a implementação de um sistema de controle de versões. Optou-se pelo fluxo de trabalho Gitflow, vinculado ao Git, que permite a edição colaborativa e compartilhamento de dados, além da melhor coordenação do trabalho simultâneo do time de desenvolvimento. 
 
-O projeto segue a seguinte convenção para o nome de branches:
+Será possível definir uma sequência de padrões para construir o conteúdo do repositório que será descrita a seguir.
 
-- `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
+O padrão de versionamento do aplicativo será a utilização de 2 conjuntos de números. O primeiro conjunto representa a versão e o segundo, a modificação. O registro da versão de iniciará em 01.00.
 
-Quanto à gerência de issues, o projeto adota a seguinte convenção para
-etiquetas:
+As baselines, que são o conjunto de itens de configurações, serão identificadas com tags, seguindo os exemplos que se seguem:
 
-- `documentation`: melhorias ou acréscimos à documentação
-- `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
+•	Documentos: DOC-V-versão
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
+•	Código Fonte: FONTE-V-versão
+
+•	Releases: RELEASE-V-versão
+
+O campo “versão” na regra acima é substituído pelo número da versão correspondente.
+
+No fluxo de criação de branchs, teremos duas principais: a main e a develop. Na main estará a o código final do projeto e na develop serão armazenados os registros estáveis mergeados com as branchs secundárias.
+
+As branchs secundárias seguirão a seguinte nomenclatura:
+
+•	Feature: para criar novos registros. Pode ser mergeada à develop.
+
+•	Hotfix: utilizada para alterações emergenciais e pontuais do projeto. Pode ser mergeada com a develop e a master.
+
+•	Release: branch de lançamento, ou seja, é unido todo o código pronto que será mergeado à main.
+
 
 > **Links Úteis**:
 >
