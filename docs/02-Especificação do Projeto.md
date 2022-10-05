@@ -21,7 +21,12 @@ A partir da compreensão do dia a dia das personas definidas para o projeto e de
 
 ### Análise da Situação Atual
 
-Atualmente, os serviços prestados à distância ocorrem em plataformas isoladas. É oportuno citar os aplicativos de consultas médicas, de terapias, de atividades físicas e de educação por exemplo. Cada serviço resulta na instalação de um aplicativo diferente no dispositivo móvel do usuário.
+Atualmente, os serviços prestados à distância ocorrem em plataformas isoladas. É oportuno citar os aplicativos de consultas médicas, de terapias, de atividades físicas e de educação por exemplo. Cada serviço resulta na instalação de um aplicativo diferente no dispositivo móvel do usuário. 
+
+Para ilustrar o cenário atual, apresenta-se a seguir um diagrama que se referencia no ZenClub, plataforma exclusiva para terapias. Para o cliente, processos semelhantes a esse precisam se repetir em plataformas distintas caso busque outras categorias de serviços.
+
+![processo-atual](https://user-images.githubusercontent.com/91376591/194056103-199094fa-748f-4f76-a584-a5db6450c35c.png)
+
 
 Distinguindo-se das soluções existentes, esse projeto propõe receber variados segmentos de serviços em um só aplicativo. Ele é visto na modelagem do processo de negócio conferindo maior entendimento por meio dos diagramas elaborados.
 
