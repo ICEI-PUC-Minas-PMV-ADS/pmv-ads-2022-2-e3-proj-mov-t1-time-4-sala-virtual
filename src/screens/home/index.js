@@ -6,7 +6,7 @@ import {home} from './styles';
 export const Home = () => (
     <SafeAreaView style={home.container}>
         <View style={[home.container, home.test]}>
-            <Text style={home.text}>Hello World!</Text>
+            <Text style={[home.text]}>Hello World!</Text>
         </View>
     </SafeAreaView>
 );
