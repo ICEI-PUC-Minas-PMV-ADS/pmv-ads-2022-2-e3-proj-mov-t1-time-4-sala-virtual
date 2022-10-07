@@ -176,6 +176,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir:
 | RE-001 | O aplicativo será suportado apenas para smartphones no formato **PORTRAIT**. |
 | RE-002 | O aplicativo funcionará apenas com conexão à internet.                       |
 | RE-003 | O aplicativo contará com serviços de back-end hospedados na suite Azure.     |
+| RE-004 | O aplicativo deverá funcionar nas versões do Android 12 ou superior          |
 
 ## Diagrama de Casos de Uso
 
