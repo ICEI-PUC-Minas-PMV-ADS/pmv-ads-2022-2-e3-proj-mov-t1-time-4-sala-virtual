@@ -6,9 +6,9 @@ export const fonts = {
     xs: 12,
     s: 14,
     m: 16,
-    l: 26,
-    xl: 32,
-    xxl: 40,
-    xxxl: 52,
+    l: 20,
+    xl: 26,
+    xxl: 32,
+    xxxl: 40,
   },
 };

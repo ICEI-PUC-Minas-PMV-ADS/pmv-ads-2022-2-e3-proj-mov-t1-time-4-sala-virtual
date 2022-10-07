@@ -1,14 +1,15 @@
-import React, {useEffect} from 'react';
-import RNBootSplash from 'react-native-bootsplash';
+import React from 'react';
 
-import {Home} from './screens/home';
+import ThemeProvider from "./providers/themes";
+import AuthProvider from "./providers/auth";
+import Navigation from "./routes/navigation";
 
-const App = () => {
-    useEffect(() => {
-        RNBootSplash.hide({fade: true});
-    }, []);
-
-    return <Home/>;
-};
+const App = () => (
+    <ThemeProvider>
+        <AuthProvider>
+            <Navigation/>
+        </AuthProvider>
+    </ThemeProvider>
+);
 
 export default App;
