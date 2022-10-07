@@ -47,14 +47,7 @@ Por fim, para o deploy, a equipe determinou o uso da ferramenta Microsoft Azure 
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
-
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+A equipe, a princípio optou pela plataforma Microsoft Azure para a hospedagem do aplicativo.
 
 ## Qualidade de Software
 
