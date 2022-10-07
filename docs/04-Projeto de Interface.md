@@ -11,14 +11,31 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e  muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade no design do wireframe interativo que será desenvolvido logo em seguida.
 
-O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamente a indicação dos principais elementos de interface - tais como menus e acessos - e funcionalidades, tais como editar, pesquisar, filtrar, configurar - e a conexão entre esses boxes a partir do processo de interação. Você pode ver mais explicações e exemplos https://www.lucidchart.com/blog/how-to-make-a-user-flow-diagram.
+![Legenda](img/Diagrama%20de%20Fluxo%20-%20Legenda.png)
 
-![Exemplo de Diagrama de Fluxo](img/diagramafluxo2.jpg)
+![Cadastro](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Cadastro.png)
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas de Fluxo”.
+![Autenticação](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Autentica%C3%A7%C3%A3o.png)
 
-> **Links Úteis**:
-> - [Fluxograma online: seis sites para fazer gráfico sem instalar nada | Produtividade | TechTudo](https://www.techtudo.com.br/listas/2019/03/fluxograma-online-seis-sites-para-fazer-grafico-sem-instalar-nada.ghtml)
+![Redefinir senha](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Redefini%C3%A7%C3%A3o%20de%20senha.png)
+
+![Validação de Formulario](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Valida%C3%A7%C3%A3o%20de%20formul%C3%A1rios.png)
+
+![Fluxo de Marcação](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Marca%C3%A7%C3%A3o.png)
+
+![FLuxo de Chamada](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Chamada.png)
+
+![FLuxo de Chamada especialista](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Chamada%20especialista.png)
+
+![Gerenciamento de Horários](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Gerenciamento%20de%20hor%C3%A1rios.png)
+
+![Fluxo de Pagamento](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Pagamento.png)
+
+![Editar Perfil](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Editar%20perfil.png)
+
+![Editar Perfil especialista](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Editar%20perfil%20especialista.png)
+
+![Fluxo Geral](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20Geral.png)
 
 ## Wireframes
 
