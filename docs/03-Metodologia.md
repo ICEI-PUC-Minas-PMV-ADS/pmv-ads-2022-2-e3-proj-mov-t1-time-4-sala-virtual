@@ -60,8 +60,6 @@ Com as equipes de desenvolvimento, serão realizadas entregas de artefatos do pr
 
 Os artefatos de entrega, são as documentações pertinentes as principais etapas do projeto,assim como as telas do aplicativo, tanto por parte do usuário como por parte do especialista. Tendo em cada etapa subentregas de parte do projeto que cada membro será responsável, todo o backlog dessa parte está disponível no aplicativo Trello.
 
-Coloque informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
-
 ### Ferramentas
 
 Nessa etapa do processo podemos dividir as ferramentas utilizadas para o desenvolvimento do projeto em:
