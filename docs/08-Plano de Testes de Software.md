@@ -6,7 +6,7 @@ Os testes seguirão com status de avaliação conforme a seguir:
 
 > Aprovado [AP]: Caso de teste aprovado e pronto para uso;
 > 
-> Aprovado com Restrição [APR]: Caso de teste aprovado, porém necessita de modificações pontuais para melhorar o desenpenho;
+> Aprovado com Restrição [APR]: Caso de teste aprovado, porém necessita de modificações pontuais para melhorar o desempenho;
 > 
 > Reprovado [RE]: Caso de teste mostrou algum problema em sua execução sendo necessário a revisão da funcionalidade;
 
@@ -115,7 +115,7 @@ Os testes seguirão com status de avaliação conforme a seguir:
 
 2 - Acessar a consulta marcada;
 
-3 - Observar se é possivel realizar a videochamada;
+3 - Observar se é possível realizar a videochamada;
 
 4 - Ao final deve-se observar se foi encaminhado uma tela de avaliação da consulta;
 
