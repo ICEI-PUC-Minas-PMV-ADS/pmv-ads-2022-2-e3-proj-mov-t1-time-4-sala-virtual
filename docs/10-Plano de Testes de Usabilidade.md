@@ -4,7 +4,7 @@ Para o projeto da Sala Virtual serão aplicados dois modelos de teste de usabili
 
 ## Teste Heurístico
 
-A aplicação do teste heurístico será baseada nas 10 heurísticas de Nielsen (NIELSEN,2000), que são princípios de avalição da usabilidade de interfaces com a finalidade de produzir boas interfaces que proporcionem boas experiências de usuário. Abaixo os 10 critérios do teste heurístico que serão aplicados:
+A aplicação do teste heurístico será baseada nas 10 heurísticas de Nielsen (NIELSEN,2000), que são princípios de avaliação da usabilidade de interfaces com a finalidade de produzir boas interfaces que proporcionem boas experiências de usuário. Abaixo os 10 critérios do teste heurístico que serão aplicados:
 
 1-Visibilidade do Status do Sistema:
 Devemos verificar se a interface mantém os usuários informados, em tempo real, de onde estão e o que está acontecendo na tela;
@@ -45,5 +45,5 @@ Ao final do desenvolvimento e das aplicações dos testes heurísticos será rea
 Com isso, para realização do teste serão recrutados 5 usuários interessados em participar da avaliação. Em seguida, contextos de utilização serão criados com tarefas que o usuário deve tentar realizar para avaliar se as interfaces relacionadas aos requisitos de alta e média prioridade são funcionais.
 Cada usuário será acompanhado de forma remota ou presencial por um membro da equipe. Cabe ao integrante do time observar e registrar os comentários, feitos pelo usuário participante do teste ou até mesmo percepções do próprio aplicador. Ainda, os contextos criados farão parte de um roteiro com as ações que os usuários devem testar, cabe ao aplicador sempre lembrar ao usuário participante que é a aplicação que está sendo testada e não o usuário. 
 
-Após todas as informações serem coletadas cabe à equipe realizar umcomparativo dos resultados, para analisar e definir se e quais mudanças serão aplicadas para tornar a experiência do usuário mais agradável e efetiva na aplicação.
+Após todas as informações serem coletadas cabe à equipe realizar um comparativo dos resultados, para analisar e definir se e quais mudanças serão aplicadas para tornar a experiência do usuário mais agradável e efetiva na aplicação.
 
