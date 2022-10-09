@@ -58,7 +58,7 @@ Apresente a divisão de papéis entre os membros do grupo.
 
 Com as equipes de desenvolvimento, serão realizadas entregas de artefatos do projeto por parte dos membros em reuniões informais, em aplicativos de reunião, tendo uma reunião semanal com os stakeholders para verificação do andamento do projeto e elucidar qualquer dificuldade no encaminhamento do projeto.
 
-Os artefatos de entrega, são as documentações pertinentes as principais etapas do projeto,assim como as telas do aplicativo, tanto por parte do usuário como por parte do especialista. Tendo em cada etapa subentregas de parte do projeto que cada membro será responsável, todo o backlog dessa parte está disponível no aplicativo Trello.
+Os artefatos de entrega, são as documentações pertinentes as principais etapas do projeto, assim como as telas do aplicativo, tanto por parte do usuário como por parte do especialista. Tendo em cada etapa subentregas de parte do projeto que cada membro será responsável, todo o backlog dessa parte está disponível no aplicativo Trello.
 
 ### Ferramentas
 
