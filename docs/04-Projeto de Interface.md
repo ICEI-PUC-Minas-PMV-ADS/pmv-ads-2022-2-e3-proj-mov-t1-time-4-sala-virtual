@@ -17,7 +17,7 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema 
 
 ![Validação de Formulario](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Valida%C3%A7%C3%A3o%20de%20formul%C3%A1rios.png)
 
-![Fluxo de Marcação](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Marca%C3%A7%C3%A3o.png)
+![Fluxo de Marcação](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Marca%C3%A7%C3%A3o.JPG)
 
 ![FLuxo de Chamada](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Chamada.png)
 
