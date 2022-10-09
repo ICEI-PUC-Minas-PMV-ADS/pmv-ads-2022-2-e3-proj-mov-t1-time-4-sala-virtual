@@ -29,7 +29,7 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema 
 
 ![Editar Perfil](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Editar%20perfil.png)
 
-![Editar Perfil especialista](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Editar%20perfil%20especialista.png)
+![Editar Perfil especialista](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Editar%20perfil%20especialista.JPG)
 
 ![Fluxo Geral](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20Geral.png)
 
