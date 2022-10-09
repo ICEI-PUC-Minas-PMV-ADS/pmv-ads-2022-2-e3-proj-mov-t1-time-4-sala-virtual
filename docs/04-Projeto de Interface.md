@@ -35,10 +35,10 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema 
 
 ## Wireframes
 
-Foram desenvolvidos wireframes de baixa fidelidade na ferramenta Figma, para auxiliar na definição da estrutura da solução e para facilitar a compreensão da equipe com relação as possíveistelas existentes no sistema. 
+Foram desenvolvidos wireframes de baixa fidelidade na ferramenta Figma, para auxiliar na definição da estrutura da solução e para facilitar a compreensão da equipe com relação as possíveis telas existentes no sistema. 
 
 ### RF-001 - Tela de Login
-A Tela de Login é a primeira tela interativa do projeto. Ao abrir o aplicativo o usuário será direcionado para essa tela. Nela contém o logo do projeto seguido de um formulário para login e dois botões: um para recuperação da senha e outro para redirecionamento para tela de cadastro.
+A Tela de Login é a primeira tela interativa do projeto. Ao abrir o aplicativo o usuário será direcionado para essa tela. Nela contém o logo do projeto seguido de um formulário para login e dois botões: um para recuperação da senha e outro de redirecionamento para tela de cadastro.
 
 ![Tela de Login](img/RF-001-Login.png)
 
@@ -48,50 +48,53 @@ A Tela de cadastro de Clientes contém o logo da aplicação e um formulário co
 ![Tela de Cadastro de Clientes](img/RF-002-CadastroClientes.png)
 
 ### RF-003 - Tela de cadastro de Especialistas
-A Tela de cadastro de Clientes contém o logo da aplicação e um formulário com as informações necessárias do usuário que utilizará a aplicação como um especialista da plataforma.
+A Tela de cadastro de especialistas contém o logo da aplicação e um formulário com as informações necessárias do usuário que utilizará a aplicação como um especialista da plataforma.
 
 ![Tela de Cadastro de Especialistas](img/RF-003-CadastroEspecialista.png)
 
 ### RF-004 - Telas de Redefinição de Senha
-Para redifinir a senha a proposta é que o usuário seja redirecionado para a tela de "esqueci minha senha" que apresenta o logo da aplicação, um texto explicativo sobre o processo de redefinição de senha e o formulário a ser preechido. O usuário receberá um link por email que o redirecionará para a tela de redefinição de senha.Nessa, haverá o formulário para redefinição.
+Para redefinir a senha a proposta é que o usuário seja redirecionado para a tela de "esqueci minha senha" que apresenta o logo da aplicação, um texto explicativo sobre o processo de redefinição de senha e o formulário a ser preenchido. O usuário receberá um link por email que o redirecionará para a tela de redefinição de senha. Nessa, haverá o formulário para redefinição.
 
 ![Tela Esqueci Minha Senha](img/RF-004-EsqueciMinhaSenha.png)
 ![Tela de Redefinição de Senha](img/RF-004-RedefinirSenha.png)
 
 ### RF-005 - Tela de ajustes de Dados Cadastrais
-O usuário poderá redefinir os dados cadastrados por meio da tela de ajustes de dados Cadastrais. Nessa tela o usuário poderá trocar a imagem de perfil e os dados informados no formulário da tela de cadastro.
+O usuário poderá redefinir os dados cadastrados por meio da tela de ajustes de dados cadastrais. Nessa tela o usuário poderá trocar a imagem de perfil e os dados informados no formulário da tela de cadastro.
 
 ![Tela de Ajustes de Dados Cadastrais](img/RF-005-AjustesDeDados.png)
 
 ### RF-006 e RF-007 - Tela de Ajuste de Contas
-Na tela de ajuste de contas o usário terá acesso a um menu com opções de ajustes da conta, além de um botão de logout e a barra de navegação entre as telas do 
+Na tela de ajuste de contas o usuário terá acesso a um menu com opções de ajustes da conta, além de um botão de logout e a barra de navegação entre as telas do 
 aplicativo. 
 
 ![Tela de Ajuse de Contas](img/RF-006-007-AjusteDeContas.png)
 
 ### RF-008 - Dashboard dos Clientes
-Na tela de dashboard dos clientes haverá um card com as próximas consultas agendadas e em caso de não haver nenhuma marcação terá apenas um card para redirecionamento para a busca de especialistas. 
+Na tela de dashboard dos clientes haverá um card com as próximas consultas agendadas e em caso de não haver nenhuma marcação terá apenas um card de redirecionamento para a busca de especialistas. 
 
 ![Tela de Dashboard dos Clientes](img/RF-008-DashCliente.png)
 
 ### RF-009 - Tela de Listagem de Categorias
-Na tela de Listagem de categorias haverá vários cards com as categorias de especialidades e um campo de busca para que o usuário realize a pesquisa. 
+Na tela de listagem de categorias haverá vários cards com as categorias de especialidades e um campo de busca para que o usuário realize a pesquisa. 
 
 ![Tela de Listagem de Categorias](img/RF-009-BuscaCategorias.png)
 
 ### RF-010 - Tela de Listagem de Especialidades
-Na tela de Listagem de Especialidades haverá um menu com as especialidades da categoria determinada pelo usuário e ao acessar a especialidade escolhida o cliente
+Na tela de listagem de especialidades haverá um menu com as especialidades da categoria determinada pelo usuário e ao acessar a especialidade escolhida o cliente
 será redirecionado para uma lista de profissionais da mesma. Na tela também há um campo de busca, um botão de retorno e a barra de navegação. 
+
 ![Tela de Listagem de Especialidades](img/RF-010-ListaEspecialidades.png)
 
 
 ### RF-011 - Tela de Perfil do Especialista e Tela de Listagem de Especialistas
-Ao selecionar a especialidade na tela de Listagem de Especialidades o usuário é redirecionado para a tela de listagem de especialista, que contém um botão de retorno, um campo de busca, um campo de filtros, a barra de navegação e os cards dos especialistas. Ao selecionar um especialista o cliente é redirecionado para a a tela de perfil do especialista que contém as informações sobre o mesmo e sua agenda. 
+Ao selecionar a especialidade na tela de listagem de especialidades o usuário é redirecionado para a tela de listagem de especialistas. A tela contém um botão de retorno, um campo de busca, um campo de filtros, a barra de navegação e os cards dos especialistas. Ao selecionar um especialista o cliente é redirecionado para a a tela de perfil do especialista onde há informações sobre o mesmo e sua agenda. 
+
 ![Tela de Listagem de Especialistas](img/RF-011-BuscaEspecialistas.png)
+
 ![Tela de Perfil do Especialista](img/RF-011-PerfilEspecialista.png)
 
 ### RF-012 - Tela de Checkout
-Ao escolher agendar uma reunião na tela do especialista o usuário é encaminhado para a tela de checkout. Nela haverá um card com as informações selecionadas e a o formulário de pagamento. Ainda também há o botão de retorno e a barra de navegação.
+Ao escolher agendar uma reunião na tela do especialista o usuário é encaminhado para a tela de checkout. Nela haverá um card com as informações selecionadas e a o formulário de pagamento. Também há o botão de retorno e a barra de navegação.
 
 ![Tela de Checkout](img/RF-012-Checkout.png)
 
@@ -103,10 +106,10 @@ Na tela de carteira haverá a informação do saldo do usuário, além das forma
 ### RF-014 - Tela de Dashboard do Especialista
 Na tela de dashboard dos especialistas haverá um card com as próximas consultas agendadas e a agenda do especialista, além do menu de navegação do aplicativo. 
 
-![Tela de Dashboard do Especialista](img/RF-014-DashEspecialista.png)
+![Tela de Dashboard do Especialista](img/RF-014-DashEspecialistas.png)
 
 ### RF-015 - Tela de Ganhos do Especialista
-Na tela de ganhos do especialista haverá o saldo atual, gráficos com o demonstrativo dos ganhos mensais e o histório de transações. 
+Na tela de ganhos do especialista haverá o saldo atual, gráficos com o demonstrativo dos ganhos mensais e o histórico de transações. 
 
 ![Tela de Ganhos](img/RF-015-Ganhos.png)
 
@@ -116,22 +119,22 @@ Na tela de gestão de horários contém os campos para definição das duraçõe
 ![Tela de Gestão de Horários](img/RF-016-GestaoDeHorarios.png)
 
 ### RF-017 - Tela de Personalização do Perfil do Especialista
-Na Tela de Personalização o especialista terá acesso as informações do cadastro e poderá alterá-las assim como a especialidade e a descrição do profissional.
+Na tela de personalização o especialista terá acesso as informações do cadastro e poderá alterá-las assim como a especialidade e a descrição do profissional.
 
 ![Tela de Personalização do Perfil](img/RF-017-PersonalizarPerfilProfissional.png)
 
 ### RF-018 - Tela de Gestão de Contas
-Na tela de gestão de contas o haverá campos para cadastrar as contas utilizadas para receber o repasse, cards com as contas cadastradas com a opção de edição.
+Na tela de gestão de contas haverá campos para cadastrar as contas utilizadas para receber o repasse e cards com as contas cadastradas com a opção de edição.
 
 ![Tela de Gestão de Contas](img/RF-018-GestaoDeContasDeRepasse.png)
 
 ### RF-019 - Tela de Videochamada
-Na tela de vídeochamada haverá um menu superior com os botões de compartilhamento de tela e encerramento da chamada, e no menu inferior as configurações da chamada. No centro haverá a imagem do vídeo. 
+Na tela de vídeochamada haverá um menu superior com os botões de compartilhamento de tela e encerramento da chamada e no menu inferior as configurações da chamada. No centro haverá a imagem do vídeo. 
 
 ![Tela de Videochamada](img/RF-019-ConsultaVideo.png)
 
 ### RF-020 - Tela de Avaliação
-Na tela de avaliação há 5 estrelas para avaliação do especialista e do cliente e um campo de texto caso o usuário deseje deixar um comentário. 
+Na tela de avaliação há 5 estrelas para avaliação do especialista ou do cliente e um campo de texto caso o usuário desejar deixar um comentário. 
 
 ![Tela de Avaliação](img/RF-020-Avaliacao.png)
 
@@ -142,7 +145,7 @@ Na tela de espera haverá uma ilustração e o texto explicativo sobre a chamada
 
 ### RF-022 - Tela de Aceite
 Na tela de aceite haverá uma ilustração, o texto com as  informações da reunião,
-as opções de configuração de audio e vídeo e o botão para entrar na videochamada.
+as opções de configuração de áudio e vídeo e o botão para entrar na videochamada.
 
 ![Tela de Aceite](img/RF-022-ConsultaEntrar.png)
 
@@ -154,7 +157,7 @@ Na tela de reconexão haverá uma ilustração e o texto de aviso sobre a recone
 ![Tela Offline](img/RF-023-EfeitoColateralSemInternet.png)
 
 ### RF-024 - Tela de Ajuda
-Na tela de Ajuda haverá campos com temas de perguntas frequentes para auxiliar o usuário. Contém também o botão de retorno e o menu de navegação. 
+Na tela de ajuda haverá campos com temas de perguntas frequentes para auxiliar o usuário. Contém também o botão de retorno e o menu de navegação. 
 
 ![Tela de Ajuda](img/RF-024-Ajuda.png)
 
