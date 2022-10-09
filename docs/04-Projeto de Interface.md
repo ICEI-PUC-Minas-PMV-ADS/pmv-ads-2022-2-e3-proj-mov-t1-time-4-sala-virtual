@@ -1,11 +1,11 @@
 
 # Projeto de Interface
 
-Para o projeto de interface foram desenvolvidos um Diagrama de fluxo e wireframes que demonstram as interações possíveis de serem executadas pelo usuário através das telas do sistema.
+Para o projeto de interface foram desenvolvidos um Diagrama de fluxo e wireframes que demonstram as interações possíveis de ser executadas pelo usuário através das telas do sistema.
 
 ## Diagrama de Fluxo
 
-O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e  muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade no design do wireframe interativo que será desenvolvido logo em seguida.
+O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e  muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade dos wireframes.
 
 ![Legenda](img/Diagrama%20de%20Fluxo%20-%20Legenda.png)
 
