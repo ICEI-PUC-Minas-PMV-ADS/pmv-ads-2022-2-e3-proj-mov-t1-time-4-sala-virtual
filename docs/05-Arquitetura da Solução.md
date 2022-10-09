@@ -37,15 +37,23 @@ A equipe optou pela plataforma Microsoft Azure para a hospedagem do aplicativo.
 
 ## Qualidade de Software
 
-Conceituar qualidade de fato é uma tarefa complexa, mas ela pode ser vista como um método gerencial que através de procedimentos disseminados por toda a organização, busca garantir um produto final que satisfaça às expectativas dos stakeholders.
+Para a qualidade de software a equipe será orientada pela norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126. Dessa forma, serão analisadas as seguintes características e sub-características:
 
-No contexto de desenvolvimento de software, qualidade pode ser entendida como um conjunto de características a serem satisfeitas, de modo que o produto de software atenda às necessidades de seus usuários. Entretanto, tal nível de satisfação nem sempre é alcançado de forma espontânea, devendo ser continuamente construído. Assim, a qualidade do produto depende fortemente do seu respectivo processo de desenvolvimento.
+### Funcionalidade
+Conjunto de atributos que evidenciam a existência de um grupo de funções. As subcaracterísticas da Funcionalidade determinadas pelo time são: Adequação, Interoperabilidade e Segurança de Acesso.
 
-A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características e 30 subcaracterísticas de qualidade para produtos de software.
-Com base nessas características e nas respectivas sub-características, identifique as sub-características que sua equipe utilizará como base para nortear o desenvolvimento do projeto de software considerando-se alguns aspectos simples de qualidade. Justifique as subcaracterísticas escolhidas pelo time e elenque as métricas que permitirão a equipe avaliar os objetos de interesse.
+### Usabilidade
+Conjunto de atributos que evidenciam o esforço do usuário para utilizar a aplicação. As sub-características da Usabilidade estabelecidas pela equipe são:
+Inteligibilidade e Apreensibilidade. 
 
-> **Links Úteis**:
->
-> - [ISO/IEC 25010:2011 - Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models](https://www.iso.org/standard/35733.html/)
-> - [Análise sobre a ISO 9126 – NBR 13596](https://www.tiespecialistas.com.br/analise-sobre-iso-9126-nbr-13596/)
-> - [Qualidade de Software - Engenharia de Software 29](https://www.devmedia.com.br/qualidade-de-software-engenharia-de-software-29/18209/)
+### Manutenibilidade 
+Atributos do software que evidenciam o esforço necessário para alterá-lo. As subcaracterísticas escolhidas pelo time são: Modificabilidade e Testabilidade.
+
+As características e sub-características selecionadas pela equipe se deram a partir do reconhecimento que de que se trata de um projeto voltado para o desenvolvimento front-end. Dessa forma foram escolhidos os critérios com maior potencial de avaliação da qualidade do software pela equipe nesse tipo de aplicação. 
+
+### Métricas
+Nos planos de teste de software e usabilidade foram pré-determinadas em alguns casos métricas subjetivas e em outros métricas objetivas. Contudo, fica estabelecido como métrica padrão para análise da qualidade a métrica de adequação:
+1- Aprovado (caso de teste aprovado e pronto para uso)
+2- Aprovado com restrição (caso de teste aprovado, porém necessita de alterações pontuais para melhorar o desempenho)
+3- Reprovado (caso de teste mostrou algum problema em sua execução sendo necessário a revisão).
+
