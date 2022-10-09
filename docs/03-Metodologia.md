@@ -51,7 +51,7 @@ Apresente a divisão de papéis entre os membros do grupo.
 - Product Owner: Brunna Alves Lage Silva;
 
 - Equipe de Desenvolvimento: Arthur Alves Rocha de Souza, Brunna Alves Lage Silva, Davison Cavalcante Barros, Mateus Cunha Melo, Paloma Chaves Silva, Pedro Thiago Rodrigues Santos, Sabrina Chaves Silva
-- Equipe de Desenvolvimento Back-end: Davison Cavalcante Barros, Mateus Cunha Melo, Paloma Chaves Silva, Sabrina Chaves Silva;
+
 - Equipe de Design: Brunna Alves Lage Silva, Pedro Thiago Rodrigues Santos.
 
 ### Processo
