@@ -1,11 +1,5 @@
 # Arquitetura da Solução
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
-
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
-
-![Arquitetura da Solução](img/02-mob-arch.png)
-
 ## Diagrama de Classes
 
 A estrutura da aplicação, as classes, os atributos e as relações entre as entidades, em termos de associações e multiplicidades, para produzir as funcionalidades do sistema podem ser vistos no diagrama abaixo: 
@@ -14,19 +8,11 @@ A estrutura da aplicação, as classes, os atributos e as relações entre as en
 
 ## Modelo ER
 
-O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.]
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
-
-> - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
-
-## Esquema Relacional
-
 ![Esquema-Relacional](img/ER.png)
 
 ## Modelo Físico
 
-Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
+O arquivo banco.sql com os scripts de criação das tabelas do banco de dados está localizado dentro da pasta docs\bd.
 
 ## Tecnologias Utilizadas
 
@@ -47,7 +33,7 @@ Por fim, para o deploy, a equipe determinou o uso da ferramenta Microsoft Azure 
 
 ## Hospedagem
 
-A equipe, a princípio optou pela plataforma Microsoft Azure para a hospedagem do aplicativo.
+A equipe optou pela plataforma Microsoft Azure para a hospedagem do aplicativo.
 
 ## Qualidade de Software
 
