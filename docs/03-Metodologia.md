@@ -50,18 +50,15 @@ Apresente a divisão de papéis entre os membros do grupo.
 - Scrum Master: Mateus Cunha Melo;
 - Product Owner: Brunna Alves Lage Silva;
 
-- Equipe de Desenvolvimento Front-end (Jornada Clientes): ;
-- Equipe de Desenvolvimento Front-end (Jornada Especialistas): ;
-- Equipe de Desenvolvimento Back-end: Davison Cavalcante Barros, Mateus Cunha Melo, Paloma Chaves Silva, Sabrina Chaves Silva;
+- Equipe de Desenvolvimento: Arthur Alves Rocha de Souza, Brunna Alves Lage Silva, Davison Cavalcante Barros, Mateus Cunha Melo, Paloma Chaves Silva, Pedro Thiago Rodrigues Santos, Sabrina Chaves Silva
+
 - Equipe de Design: Brunna Alves Lage Silva, Pedro Thiago Rodrigues Santos.
 
 ### Processo
 
 Com as equipes de desenvolvimento, serão realizadas entregas de artefatos do projeto por parte dos membros em reuniões informais, em aplicativos de reunião, tendo uma reunião semanal com os stakeholders para verificação do andamento do projeto e elucidar qualquer dificuldade no encaminhamento do projeto.
 
-Os artefatos de entrega, são as documentações pertinentes as principais etapas do projeto,assim como as telas do aplicativo, tanto por parte do usuário como por parte do especialista. Tendo em cada etapa subentregas de parte do projeto que cada membro será responsável, todo o backlog dessa parte está disponível no aplicativo Trello.
-
-Coloque informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
+Os artefatos de entrega, são as documentações pertinentes as principais etapas do projeto, assim como as telas do aplicativo, tanto por parte do usuário como por parte do especialista. Tendo em cada etapa subentregas de parte do projeto que cada membro será responsável, todo o backlog dessa parte está disponível no aplicativo Trello.
 
 ### Ferramentas
 
@@ -69,7 +66,7 @@ Nessa etapa do processo podemos dividir as ferramentas utilizadas para o desenvo
 
 Ferramentas de Gestão e Auxiliares:
 
-- Trello: Utilizado para a gestão dos quadros do Kanbam;
+- Trello: Utilizado para a gestão dos quadros do Kanban;
 - Figma: Utilizado para o desenvolvimento do design das telas do aplicativo, wireframes e modelos de relacionamento;
 
 Ferramentas de desenvolvimento:
@@ -80,10 +77,3 @@ Ferramentas de desenvolvimento:
 - Postman/Swagger: Teste de requisições da API;
 - Azure: Hospedagem do serviço da API;
 
-As ferramentas empregadas no projeto são:
-
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
-
-O editor de código foi escolhido porque ele possui uma integração com o sistema de versão. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
