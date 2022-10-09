@@ -21,7 +21,7 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema 
 
 ![FLuxo de Chamada](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Chamada.png)
 
-![FLuxo de Chamada especialista](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Chamada%20especialista.png)
+![FLuxo de Chamada especialista](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Chamada%20especialista.JPG)
 
 ![Gerenciamento de Horários](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Gerenciamento%20de%20hor%C3%A1rios.png)
 
