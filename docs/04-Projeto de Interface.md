@@ -7,7 +7,7 @@ Para o projeto de interface foram desenvolvidos um Diagrama de fluxo e wireframe
 
 O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e  muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade dos wireframes.
 
-![Legenda](img/Diagrama%20de%20Fluxo%20-%20Legenda.png)
+![Legenda](img/Diagrama%20de%20Fluxo%20-%20Legenda.JPG)
 
 ![Cadastro](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Cadastro.png)
 
@@ -17,11 +17,11 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema 
 
 ![Validação de Formulario](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Valida%C3%A7%C3%A3o%20de%20formul%C3%A1rios.png)
 
-![Fluxo de Marcação](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Marca%C3%A7%C3%A3o.png)
+![Fluxo de Marcação](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Marca%C3%A7%C3%A3o.JPG)
 
 ![FLuxo de Chamada](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Chamada.png)
 
-![FLuxo de Chamada especialista](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Chamada%20especialista.png)
+![FLuxo de Chamada especialista](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Chamada%20especialista.JPG)
 
 ![Gerenciamento de Horários](img/Diagrama%20de%20Fluxo%20-%20Fluxo%20de%20Gerenciamento%20de%20hor%C3%A1rios.png)
 
