@@ -1,4 +1,17 @@
 {
-  "name": "src",
-  "displayName": "src"
+  "expo": {
+    "name": "Sala Virtual",
+    "slug": "sala-virtual",
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "backgroundColor": "#2C3A97"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#EEF4F9"
+      }
+    }
+  }
 }

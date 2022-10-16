@@ -1,6 +1,6 @@
 import React, {useMemo, useReducer, useContext, useEffect} from 'react';
 import {useThemes} from './themes';
-import EncryptedStorage from 'react-native-encrypted-storage';
+import * as SecureStore from 'expo-secure-store';
 
 import * as auth from '../networking/auth';
 
@@ -17,7 +17,7 @@ const AuthProvider = props => {
     const bootstrapAsync = async () => {
       apiInstance.interceptors.request.use(
         async config => {
-          const token = await EncryptedStorage.getItem('userToken');
+          const token = await SecureStore.getItemAsync('userToken');
           if (token) {
             config.headers.Authorization = 'Bearer ' + token;
           } else {
@@ -39,7 +39,7 @@ const AuthProvider = props => {
         },
       );
       try {
-        const userToken = await EncryptedStorage.getItem('userToken');
+        const userToken = await SecureStore.getItemAsync('userToken');
         if (userToken) {
           return handleSignIn(userToken);
         } else {
@@ -54,7 +54,7 @@ const AuthProvider = props => {
   const handleSignIn = async token => {
     themes.changeBackground(null);
     try {
-      await EncryptedStorage.setItem('userToken', token);
+      await SecureStore.setItemAsync('userToken', token);
       const user = await auth.getProfile();
       dispatch({type: 'SIGN_IN', user: user, token: token});
       return user;
@@ -64,7 +64,7 @@ const AuthProvider = props => {
   };
   const handleSignOut = async () => {
     try {
-      await EncryptedStorage.removeItem('userToken');
+      await SecureStore.deleteItemAsync('userToken');
       dispatch({type: 'SIGN_OUT'});
     } catch (e) {
       dispatch({type: 'SIGN_OUT'});

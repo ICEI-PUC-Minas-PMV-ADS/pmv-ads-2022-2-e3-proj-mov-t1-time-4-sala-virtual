@@ -1,10 +1,13 @@
 import React, {useMemo, useState, useContext, useEffect} from 'react';
 import {useColorScheme} from 'react-native';
 import {themes} from '../styles/themes';
+import {useFonts} from "expo-font";
+import {mapFonts} from '../styles/fonts/map';
 
 const ThemeContext = React.createContext();
 
 const ThemeProvider = props => {
+  const [fontsLoaded] = useFonts(mapFonts());
   const scheme = useColorScheme();
   const defaultTheme =
     scheme === 'dark'
@@ -38,8 +41,8 @@ const ThemeProvider = props => {
     setTheme(newTheme);
   };
   const value = useMemo(() => {
-    return {theme, changeBackground};
-  }, [theme]);
+    return {theme, fontsLoaded, changeBackground};
+  }, [theme, fontsLoaded]);
   return (
     <ThemeContext.Provider value={value}>
       {props.children}
