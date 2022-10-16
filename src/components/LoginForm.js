@@ -7,7 +7,6 @@ import * as Yup from 'yup';
 import {useTheme, useNavigation} from '@react-navigation/native';
 
 import {useAuth} from '../providers/auth';
-import {useThemes} from '../providers/themes';
 
 import {palette} from '../styles/palette';
 import {sizing} from '../styles/sizing';
@@ -28,16 +27,14 @@ const LoginForm = props => {
   const navigation = useNavigation();
   const {onApiCallback} = props;
   const {handleSignIn} = useAuth();
-  const themes = useThemes();
   const onLoginSubmit = async (values, {setSubmitting, setFieldError}) => {
     setSubmitting(true);
     try {
-      let data = await login(values);
-      let loggedUser = await handleSignIn(data);
+      const {token} = await login(values);
+      const loggedUser = await handleSignIn(token);
       if ('is_active' in loggedUser && !loggedUser.is_active && onApiCallback) {
         onApiCallback(() => {
-          themes.changeBackground('#000000');
-          navigation.navigate('Pending');
+          navigation.navigate('Home');
         });
       }
     } catch (err) {
@@ -45,8 +42,9 @@ const LoginForm = props => {
       try {
         let {errors} = JSON.parse(err);
         if (errors) {
-          Object.keys(errors).map(field => {
-            setFieldError(field, errors[field][0] ?? 'Erro.');
+          Object.keys(errors).forEach(field => {
+            const fieldName = field === 'User.Email' ? 'Email' : field;
+            setFieldError(fieldName.toLowerCase(), errors[field][0] ?? 'Erro.');
           });
         }
       } catch (e) {

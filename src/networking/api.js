@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const api = axios.create({
-  baseURL: '',
+  baseURL: 'https://apisala.azurewebsites.net/api',
 });
 
 export function errHandler(err) {

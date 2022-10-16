@@ -1,4 +1,4 @@
-import React, {useCallback} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 
 import {useThemes} from '../providers/themes';
 import {useAuth} from '../providers/auth';
@@ -10,11 +10,20 @@ import * as SplashScreen from 'expo-splash-screen';
 const Navigation = () => {
     const {theme, fontsLoaded} = useThemes();
     const {state} = useAuth();
-    const onAppReady = useCallback(async () => {
-        if (fontsLoaded && !state.isLoading) {
-            await SplashScreen.hideAsync();
+    const [isReady, setIsReady] = useState(false);
+    const onAppReady = useCallback(() => {
+        if (fontsLoaded) {
+            setIsReady(true);
         }
-    }, [fontsLoaded, state]);
+    }, [fontsLoaded]);
+    useEffect(() => {
+        async function hideSplash() {
+            if (isReady && !state.isLoading) {
+                await SplashScreen.hideAsync();
+            }
+        }
+        hideSplash();
+    }, [state, isReady]);
     return !fontsLoaded ? null : (
     <GestureHandlerRootView
         style={{flex: 1, backgroundColor: theme.colors.background}}>
