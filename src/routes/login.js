@@ -4,7 +4,9 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import LoginScreen from '../screens/LoginScreen';
 import ForgotScreen from '../screens/ForgotScreen';
-import RegisterScreen from '../screens/RegisterScreen';
+import PasswordResetScreen from '../screens/PasswordResetScreen';
+import RegisterClientScreen from '../screens/RegisterClientScreen';
+import RegisterSpecialistScreen from '../screens/RegisterSpecialistScreen';
 
 const LoginStack = () => {
   const Stack = createNativeStackNavigator();
@@ -17,7 +19,11 @@ const LoginStack = () => {
       />
       <Stack.Group screenOptions={{headerShown: false}}>
         <Stack.Screen name="Forgot" component={ForgotScreen} />
-        <Stack.Screen name="Register" component={RegisterScreen} />
+        <Stack.Screen name="PasswordReset" component={PasswordResetScreen} />
+      </Stack.Group>
+      <Stack.Group screenOptions={{headerShown: false}}>
+        <Stack.Screen name="RegisterClient" component={RegisterClientScreen} />
+        <Stack.Screen name="RegisterSpecialist" component={RegisterSpecialistScreen} />
       </Stack.Group>
     </Stack.Navigator>
   );

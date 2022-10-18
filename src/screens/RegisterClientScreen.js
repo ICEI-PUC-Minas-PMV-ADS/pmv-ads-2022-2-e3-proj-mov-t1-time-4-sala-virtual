@@ -2,9 +2,9 @@ import React from 'react';
 import {StyleSheet, Text} from 'react-native';
 import ScreenWrapper from '../components/ScreenWrapper';
 
-const RegisterScreen = () => (
+const RegisterClientScreen = () => (
     <ScreenWrapper style={styles.appContainer}>
-        <Text>Cadastre sua conta</Text>
+        <Text>Cadastre sua conta de cliente</Text>
     </ScreenWrapper>
 );
 
@@ -15,4 +15,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default RegisterScreen;
+export default RegisterClientScreen;

@@ -85,7 +85,7 @@ const LoginForm = props => {
             <Button color={colors.primary} label="Entrar" labelColor={palette.white} labelWeight="bold" labelSize="l" onPress={handleSubmit} style={{marginTop: sizing.l}} />
             <View style={styles.buttonContainer}>
               <Button label="Esqueci minha senha" labelColor={colors.primary} labelWeight="bold" muted onPress={() => navigation.navigate('Forgot')} />
-              <Button label="Cadastre-se" labelColor={colors.primary} labelWeight="bold" muted onPress={() => navigation.navigate('Register')} />
+              <Button label="Cadastre-se" labelColor={colors.primary} labelWeight="bold" muted onPress={() => navigation.navigate('RegisterClient')} />
             </View>
           </View>
       )}
