@@ -1,20 +1,32 @@
 import React from 'react';
 
-import {Text} from 'react-native';
-
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import {useTheme} from '@react-navigation/native';
 
-import {Home} from '../screens/home';
-
 import {fonts} from '../styles/fonts';
-import {hexToRGBA} from '../helpers/hexToRGBA';
-import AppHeaderText from '../components/AppHeaderText';
+import AppText from '../components/AppText';
+import {palette} from '../styles/palette';
+import {sizing} from '../styles/sizing';
+import HomeScreen from '../screens/HomeScreen';
+import SearchScreen from '../screens/SearchScreen';
+import MeetingScreen from '../screens/MeetingScreen';
+import AccountScreen from '../screens/AccountScreen';
+import MainHeader from '../components/MainHeader';
+
+const SalaVirtualIcon = fonts.icons;
 
 function getTabIcon(route) {
   route = route.toLowerCase();
   switch (route) {
+    case 'home':
+      return 'home';
+    case 'search':
+      return 'search';
+    case 'meeting':
+      return 'on';
+    case 'account':
+      return 'user';
     default:
       return 'home';
   }
@@ -24,6 +36,12 @@ function getScreenTitle(route) {
   switch (route.toLowerCase()) {
     case 'home':
       return 'Início';
+    case 'search':
+      return 'Busca';
+    case 'meeting':
+      return 'Reuniões';
+    case 'account':
+      return 'Conta';
     default:
       return route;
   }
@@ -37,29 +55,35 @@ const Tab = () => {
     <BottomTab.Navigator
       initialRouteName="Home"
       screenOptions={({route}) => ({
-        headerTitle: props => {
-          props.children = getScreenTitle(props.children);
+        header: () => {
           return (
-            <AppHeaderText size="m" weight="bold" align="center" {...props} />
+            <MainHeader title={getScreenTitle(route.name)} />
           );
         },
-        animationEnabled: false,
-        tabBarLabelStyle: {
-          fontFamily: fonts.sans.normal.regular,
+        tabBarStyle: {
+          height: sizing.l * 3.5,
+          backgroundColor: palette.lightGray,
+          borderTopColor: palette.lightGray,
+        },
+        tabBarLabel: ({focused, color}) => {
+          color = focused ? colors.primary : palette.black;
+          return <AppText size="s" color={color} style={{lineHeight: sizing.m}}>{getScreenTitle(route.name)}</AppText>;
         },
         tabBarIcon: ({focused, color, size}) => {
-          color = focused ? colors.primary : hexToRGBA(colors.text, 0.5);
+          color = focused ? colors.primary : palette.black;
           return (
-              <Text>Home</Text>
-            // <AppIcon
-            //   name={getTabIcon(route.name)}
-            //   size={size}
-            //   color={color}
-            // />
+            <SalaVirtualIcon
+              name={getTabIcon(route.name)}
+              size={size}
+              color={color}
+            />
           );
         },
       })}>
-      <BottomTab.Screen name="Home" component={Home} />
+      <BottomTab.Screen name="Home" component={HomeScreen} options={{headerShown: false}} />
+      <BottomTab.Screen name="Search" component={SearchScreen} />
+      <BottomTab.Screen name="Meeting" component={MeetingScreen} />
+      <BottomTab.Screen name="Account" component={AccountScreen} />
     </BottomTab.Navigator>
   );
 };
