@@ -12,41 +12,7 @@ import Button from '../components/Button';
 const RegisterClientScreen = () => (
     <ScreenWrapper style={styles.appContainer}>
         <View style={{flex: 1}}>
-            <Image
-                style={styles.logoImage}
-                source={require('../assets/images/logo.png')}
-            />
-            <InputLabel 
-                placeholder = {"Nome"}
-            />
-            <InputLabel 
-                placeholder = {"Email"}
-                keyboardType = 'email-address'
-            />
-            <InputLabel 
-                placeholder = {"CNPJ"}
-                keyboardType = 'numeric'
-            />
-            <InputLabel 
-                placeholder = {"Data de nascimento"}
-                keyboardType = 'numeric'
-            />
-            <InputLabel 
-                placeholder = {"Senha"}
-            />
-            <InputLabel
-                placeholder = {"Confirmar senha"}
-            />
-     
-            <Button 
-                color={palette.blue} 
-                label="Cadastrar" 
-                labelColor={palette.white} 
-                labelWeight="bold" 
-                labelSize="l" 
-                style={{marginTop: sizing.xl}} 
-            />
-            
+            <Text>Olá Cliente</Text>
         </View>
         
     </ScreenWrapper>
