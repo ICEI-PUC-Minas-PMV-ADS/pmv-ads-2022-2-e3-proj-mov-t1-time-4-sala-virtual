@@ -106,7 +106,8 @@ const InputLabel = props => {
 
 const styles = StyleSheet.create({
   containerStyle: {
-    marginBottom: sizing.m,
+    marginBottom: sizing.l,
+
   },
   errorContainer: {
     paddingBottom: sizing.s,
