@@ -85,7 +85,9 @@ const LoginForm = props => {
                 secureTextEntry={true}
                 autoCapitalize="none"
             />
+            <View style={styles.forgotPasswordContainer}>
             <Button style={styles.linkForgotPassword} labelColor={palette.lightBlue} labelSize="s" labelWeight="bold" muted onPress={() => navigation.navigate('Forgot')} label="Esqueci minha senha"/>
+            </View>
             <Button color={colors.primary} label="Entrar" labelColor={palette.white} labelWeight="bold" labelSize="l" onPress={handleSubmit} style={styles.button} />
             <View style={styles.linkContainer}>
               <AppText size="xs" weight="bold" style={{textAlignVertical: "center"}}>Não tem uma conta? </AppText>
@@ -112,19 +114,21 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   linkText: {
-    paddingHorizontal: 0,
     padding: sizing.xs,
+  },
+  forgotPasswordContainer: {
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
   },
   linkForgotPassword: {
     marginTop: sizing.l,
     padding: 0,
-    justifyContent: 'flex-end',
   },
   button: {
     padding: sizing.s,
     marginTop: sizing.xl,
     marginBottom: sizing.l,
-  }
+  },
 });
 
 export default LoginForm;
