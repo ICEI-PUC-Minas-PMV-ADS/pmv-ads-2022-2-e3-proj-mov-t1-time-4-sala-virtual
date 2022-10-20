@@ -12,6 +12,9 @@ import {palette} from '../styles/palette';
 import {sizing} from '../styles/sizing';
 import {login} from '../networking/auth';
 
+import AppText from './AppText';
+import { fonts } from '../styles/fonts';
+
 import Button from './Button';
 import InputLabel from "./InputLabel";
 
@@ -82,10 +85,15 @@ const LoginForm = props => {
                 secureTextEntry={true}
                 autoCapitalize="none"
             />
-            <Button color={colors.primary} label="Entrar" labelColor={palette.white} labelWeight="bold" labelSize="l" onPress={handleSubmit} style={{marginTop: sizing.l}} />
-            <View style={styles.buttonContainer}>
-              <Button label="Esqueci minha senha" labelColor={colors.primary} labelWeight="bold" muted onPress={() => navigation.navigate('Forgot')} />
-              <Button label="Cadastre-se" labelColor={colors.primary} labelWeight="bold" muted onPress={() => navigation.navigate('RegisterClient')} />
+            <Button style={styles.linkForgotPassword} labelColor={palette.lightBlue} labelSize="s" labelWeight="bold" muted onPress={() => navigation.navigate('Forgot')} label="Esqueci minha senha"/>
+            <Button color={colors.primary} label="Entrar" labelColor={palette.white} labelWeight="bold" labelSize="l" onPress={handleSubmit} style={styles.button} />
+            <View style={styles.linkContainer}>
+              <AppText size="xs" weight="bold" style={{textAlignVertical: "center"}}>Não tem uma conta? </AppText>
+              <Button style={styles.linkText} labelColor={palette.lightBlue} labelWeight="bold" labelSize="xs" muted onPress={() => navigation.navigate('RegisterClient')} label="Cadastre-se"/> 
+            </View>
+            <View style={styles.linkContainer}>
+              <AppText size="xs" weight="bold" style={{textAlignVertical: "center"}}>Quer ser um especialista parceiro? </AppText>
+              <Button style={styles.linkText} labelColor={palette.lightBlue} labelWeight="bold" labelSize="xs" muted onPress={() => navigation.navigate('RegisterSpecialist')} label="Cadastre-se"/>
             </View>
           </View>
       )}
@@ -96,11 +104,26 @@ const LoginForm = props => {
 const styles = StyleSheet.create({
   formContainer: {
     flex: 1,
+    padding: "4%",
   },
-  buttonContainer: {
+  linkContainer: {
     marginTop: sizing.m,
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
+  },
+  linkText: {
+    paddingHorizontal: 0,
+    padding: sizing.xs,
+  },
+  linkForgotPassword: {
+    marginTop: sizing.l,
+    padding: 0,
+    justifyContent: 'flex-end',
+  },
+  button: {
+    padding: sizing.s,
+    marginTop: sizing.xl,
+    marginBottom: sizing.l,
   }
 });
 
