@@ -48,4 +48,3 @@ const isValidCNPJ = (number) => {
 }
 
 export {isValidCPF, isValidCNPJ};
-

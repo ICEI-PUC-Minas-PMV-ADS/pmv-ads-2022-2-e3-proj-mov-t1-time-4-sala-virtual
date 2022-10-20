@@ -20,7 +20,7 @@ const ScreenWrapper = props => {
 const styles = StyleSheet.create({
   screenContainer: {
     flex: 1,
-    paddingVertical: sizing.m,
+    paddingHorizontal: sizing.m + sizing.s,
   },
 });
 

@@ -161,14 +161,7 @@ const RegisterForm = props => {
               secureTextEntry={true}
               autoCapitalize="none"
             />
-            <Button 
-            color={colors.primary} 
-            label="Cadastrar" 
-            labelColor={palette.white} 
-            labelWeight="bold" 
-            labelSize="l" 
-            onPress={handleSubmit} 
-            style={styles.buttonStyle} />
+            <Button color={colors.primary} label="Entrar" labelColor={palette.white} labelWeight="bold" labelSize="l" onPress={handleSubmit} style={{marginTop: sizing.l}} />
           </View>
       )}
     </Formik>
@@ -179,10 +172,6 @@ const styles = StyleSheet.create({
   formContainer: {
     flex: 1,
   },
-  buttonStyle: {
-    marginTop: sizing.l,
-    width: '100%'
-  }
 });
 
 export default RegisterForm;
