@@ -7,7 +7,6 @@ const ItemSeparator = props => {
   return (
     <View
       style={{
-        flex: 1,
         width: sizing[props.size] ?? props.size,
         height: sizing[props.size] ?? props.size,
       }}
