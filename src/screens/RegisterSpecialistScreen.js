@@ -4,7 +4,7 @@ import ScreenWrapper from '../components/ScreenWrapper';
 import RegisterForm from '../components/RegisterForm';
 import {sizing} from '../styles/sizing';
 
-const RegisterClientScreen = () => (
+const RegisterSpecialistScreen = () => (
     <ScreenWrapper scroll>
         <View style={{flex: 1, padding:sizing.l}}>
             <Image
@@ -25,4 +25,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default RegisterClientScreen;
+export default RegisterSpecialistScreen;
