@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: sizing.m,
         flex: 1,
         justifyContent: 'center',
+        marginTop: sizing.xxl,
     },
     logoImage: {
         width: 320,
