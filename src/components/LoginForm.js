@@ -9,14 +9,13 @@ import {useTheme, useNavigation} from '@react-navigation/native';
 import {useAuth} from '../providers/auth';
 
 import {palette} from '../styles/palette';
-import {sizing} from '../styles/sizing';
 import {login} from '../networking/auth';
 
 import AppText from './AppText';
-import { fonts } from '../styles/fonts';
 
 import Button from './Button';
 import InputLabel from "./InputLabel";
+import ItemSeparator from './ItemSeparator';
 
 const LoginSchema = Yup.object().shape({
   email: Yup.string()
@@ -64,38 +63,41 @@ const LoginForm = props => {
         await onLoginSubmit(values, {setSubmitting, setFieldError});
       }}>
       {({handleChange, handleBlur, handleSubmit, values, errors, touched}) => (
-          <View style={styles.formContainer}>
+          <View>
             <InputLabel
-                placeholder={'E-mail'}
-                value={values.email}
-                onChangeText={handleChange('email')}
-                onBlur={handleBlur('email')}
-                error={errors.email}
-                touched={touched.email}
-                keyboardType="email-address"
-                autoCapitalize="none"
+              placeholder={'E-mail'}
+              value={values.email}
+              onChangeText={handleChange('email')}
+              onBlur={handleBlur('email')}
+              error={errors.email}
+              touched={touched.email}
+              keyboardType="email-address"
+              autoCapitalize="none"
             />
             <InputLabel
-                placeholder={'Senha'}
-                value={values.password}
-                onChangeText={handleChange('password')}
-                onBlur={handleBlur('password')}
-                error={errors.password}
-                touched={touched.password}
-                secureTextEntry={true}
-                autoCapitalize="none"
+              placeholder={'Senha'}
+              value={values.password}
+              onChangeText={handleChange('password')}
+              onBlur={handleBlur('password')}
+              error={errors.password}
+              touched={touched.password}
+              secureTextEntry={true}
+              autoCapitalize="none"
             />
+            <ItemSeparator size="m" />
+            <Button color={colors.primary} label="Entrar" labelColor={palette.white} labelWeight="bold" labelSize="l" onPress={handleSubmit} />
+            <ItemSeparator size="s" />
             <View style={styles.forgotPasswordContainer}>
-            <Button style={styles.linkForgotPassword} labelColor={palette.lightBlue} labelSize="s" labelWeight="bold" muted onPress={() => navigation.navigate('Forgot')} label="Esqueci minha senha"/>
+              <Button labelColor={palette.lightBlue} labelSize="s" labelWeight="bold" muted onPress={() => navigation.navigate('Forgot')} label="Esqueci minha senha"/>
             </View>
-            <Button color={colors.primary} label="Entrar" labelColor={palette.white} labelWeight="bold" labelSize="l" onPress={handleSubmit} style={styles.button} />
+            <ItemSeparator size="m" />
             <View style={styles.linkContainer}>
               <AppText size="xs" weight="bold" style={{textAlignVertical: "center"}}>Não tem uma conta? </AppText>
-              <Button style={styles.linkText} labelColor={palette.lightBlue} labelWeight="bold" labelSize="xs" muted onPress={() => navigation.navigate('RegisterClient')} label="Cadastre-se"/> 
+              <Button labelColor={palette.lightBlue} labelWeight="bold" labelSize="xs" muted onPress={() => navigation.navigate('RegisterClient')} label="Cadastre-se"/>
             </View>
             <View style={styles.linkContainer}>
               <AppText size="xs" weight="bold" style={{textAlignVertical: "center"}}>Quer ser um especialista parceiro? </AppText>
-              <Button style={styles.linkText} labelColor={palette.lightBlue} labelWeight="bold" labelSize="xs" muted onPress={() => navigation.navigate('RegisterSpecialist')} label="Cadastre-se"/>
+              <Button labelColor={palette.lightBlue} labelWeight="bold" labelSize="xs" muted onPress={() => navigation.navigate('RegisterSpecialist')} label="Cadastre-se"/>
             </View>
           </View>
       )}
@@ -104,30 +106,13 @@ const LoginForm = props => {
 };
 
 const styles = StyleSheet.create({
-  formContainer: {
-    flex: 1,
-    padding: "4%",
-  },
   linkContainer: {
-    marginTop: sizing.m,
     flexDirection: 'row',
+    alignItems: 'center',
     justifyContent: 'center',
   },
-  linkText: {
-    padding: sizing.xs,
-  },
   forgotPasswordContainer: {
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
-  },
-  linkForgotPassword: {
-    marginTop: sizing.l,
-    padding: 0,
-  },
-  button: {
-    padding: sizing.s,
-    marginTop: sizing.xl,
-    marginBottom: sizing.l,
+    alignItems: 'center',
   },
 });
 

@@ -1,25 +1,24 @@
 import React from 'react';
-import {Image, StyleSheet, View} from 'react-native';
+import {Image, StyleSheet} from 'react-native';
 import ScreenWrapper from '../components/ScreenWrapper';
 import RegisterForm from '../components/RegisterForm';
-import {sizing} from '../styles/sizing';
+import ItemSeparator from '../components/ItemSeparator';
 
 const RegisterSpecialistScreen = () => (
     <ScreenWrapper scroll>
-        <View style={{flex: 1, padding:sizing.l}}>
-            <Image
-              style={styles.logoImage}
-              source={require('../assets/images/logo.png')}
-            />
-            <RegisterForm type="specialist" />
-        </View>
+        <ItemSeparator size="xl" />
+        <Image
+          style={styles.logoImage}
+          source={require('../assets/images/logo.png')}
+        />
+        <ItemSeparator size="xl" />
+        <RegisterForm type="specialist" />
     </ScreenWrapper>
 );
 
 const styles = StyleSheet.create({
     logoImage: {
         height: 84,
-        marginVertical: sizing.xxl,
         resizeMode: 'contain',
         alignSelf: 'center',
     },
