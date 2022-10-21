@@ -56,6 +56,7 @@ const ForgotForm = () => {
             label="Enviar"
             color={palette.blue}
             labelWeight="bold"
+            labelSize="l"
             labelColor={palette.white}
             onPress={handleSubmit}
           />
