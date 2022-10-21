@@ -1,13 +1,12 @@
 import React from 'react';
 
-import {View, StyleSheet} from 'react-native';
+import {View} from 'react-native';
 import {Formik} from 'formik';
 import * as Yup from 'yup';
 
-import {useTheme, useNavigation} from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 
 import {palette} from '../styles/palette';
-import {sizing} from '../styles/sizing';
 
 import Button from './Button';
 import InputLabel from './InputLabel';
@@ -22,21 +21,9 @@ const ForgotSchema = Yup.object().shape({
 
 const ForgotForm = () => {
   const navigation = useNavigation();
-  const onForgotSubmit = async (values, {setSubmitting, setFieldError}) => {
+  const onForgotSubmit = async (values, {setSubmitting}) => {
     setSubmitting(true);
-
-    try {
-      let {errors} = JSON.parse(err);
-      if (errors) {
-        Object.keys(errors).forEach(field => {
-          const fieldName = field === 'User.Email' ? 'Email' : field;
-          setFieldError(fieldName.toLowerCase(), errors[field][0] ?? 'Erro.');
-        });
-      }
-    } catch (e) {
-      setFieldError('email', err);
-    }
-
+    navigation.navigate('PasswordReset');
     setSubmitting(false);
   };
   return (
@@ -46,8 +33,8 @@ const ForgotForm = () => {
       onSubmit={async (values, {setSubmitting, setFieldError}) => {
         await onForgotSubmit(values, {setSubmitting, setFieldError});
       }}>
-      {({handleChange, handleBlur, values, errors, touched}) => (
-        <View style={styles.formContainer}>
+      {({handleChange, handleBlur, values, errors, touched, handleSubmit}) => (
+        <View>
           <AppText color={palette.black} align={'center'} size="m">
             Para redefinir a sua senha, informe o usuário ou e-mail cadastrado
             na sua conta e lhe enviaremos um link com as instruções
@@ -64,26 +51,18 @@ const ForgotForm = () => {
             autoCapitalize="none"
             r
           />
-          <ItemSeparator size="xl" />
+          <ItemSeparator size="l" />
           <Button
             label="Enviar"
             color={palette.blue}
             labelWeight="bold"
             labelColor={palette.white}
-            onPress={() => navigation.navigate('PasswordReset')}
+            onPress={handleSubmit}
           />
         </View>
       )}
     </Formik>
   );
 };
-
-const styles = StyleSheet.create({
-  buttonContainer: {
-    marginTop: sizing.m,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-});
 
 export default ForgotForm;
