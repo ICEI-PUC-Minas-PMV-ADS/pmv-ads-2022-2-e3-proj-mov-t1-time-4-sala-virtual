@@ -1,4 +1,5 @@
 import React from 'react';
+import {Platform} from 'react-native';
 
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
@@ -61,7 +62,7 @@ const Tab = () => {
           );
         },
         tabBarStyle: {
-          height: sizing.l * 3.5,
+          height: sizing.l * (Platform.OS === 'android' ? 2.5 : 3.5),
           backgroundColor: palette.lightGray,
           borderTopColor: palette.lightGray,
         },

@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, View, StyleSheet} from 'react-native';
+import {SafeAreaView, View, StyleSheet,Text} from 'react-native';
 
 import {ScrollView} from 'react-native-gesture-handler';
 
@@ -20,7 +20,7 @@ const ScreenWrapper = props => {
 const styles = StyleSheet.create({
   screenContainer: {
     flex: 1,
-    paddingVertical: sizing.m,
+    paddingHorizontal: sizing.m + sizing.s,
   },
 });
 
