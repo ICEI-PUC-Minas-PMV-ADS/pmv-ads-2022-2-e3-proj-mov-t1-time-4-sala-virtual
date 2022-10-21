@@ -9,11 +9,11 @@ import {useTheme, useNavigation} from '@react-navigation/native';
 import {useAuth} from '../providers/auth';
 
 import {palette} from '../styles/palette';
-import {sizing} from '../styles/sizing';
 import {login} from '../networking/auth';
 
 import Button from './Button';
 import InputLabel from "./InputLabel";
+import ItemSeparator from './ItemSeparator';
 
 const LoginSchema = Yup.object().shape({
   email: Yup.string()
@@ -61,31 +61,41 @@ const LoginForm = props => {
         await onLoginSubmit(values, {setSubmitting, setFieldError});
       }}>
       {({handleChange, handleBlur, handleSubmit, values, errors, touched}) => (
-          <View style={styles.formContainer}>
+          <View>
             <InputLabel
-                placeholder={'E-mail'}
-                value={values.email}
-                onChangeText={handleChange('email')}
-                onBlur={handleBlur('email')}
-                error={errors.email}
-                touched={touched.email}
-                keyboardType="email-address"
-                autoCapitalize="none"
+              placeholder={'E-mail'}
+              value={values.email}
+              onChangeText={handleChange('email')}
+              onBlur={handleBlur('email')}
+              error={errors.email}
+              touched={touched.email}
+              keyboardType="email-address"
+              autoCapitalize="none"
             />
             <InputLabel
-                placeholder={'Senha'}
-                value={values.password}
-                onChangeText={handleChange('password')}
-                onBlur={handleBlur('password')}
-                error={errors.password}
-                touched={touched.password}
-                secureTextEntry={true}
-                autoCapitalize="none"
+              placeholder={'Senha'}
+              value={values.password}
+              onChangeText={handleChange('password')}
+              onBlur={handleBlur('password')}
+              error={errors.password}
+              touched={touched.password}
+              secureTextEntry={true}
+              autoCapitalize="none"
             />
-            <Button color={colors.primary} label="Entrar" labelColor={palette.white} labelWeight="bold" labelSize="l" onPress={handleSubmit} style={{marginTop: sizing.l}} />
-            <View style={styles.buttonContainer}>
-              <Button label="Esqueci minha senha" labelColor={colors.primary} labelWeight="bold" muted onPress={() => navigation.navigate('Forgot')} />
-              <Button label="Cadastre-se" labelColor={colors.primary} labelWeight="bold" muted onPress={() => navigation.navigate('RegisterClient')} />
+            <ItemSeparator size="m" />
+            <Button color={colors.primary} label="Entrar" labelColor={palette.white} labelWeight="bold" labelSize="l" onPress={handleSubmit} />
+            <ItemSeparator size="s" />
+            <View style={styles.forgotPasswordContainer}>
+              <Button labelColor={palette.lightBlue} labelWeight="bold" muted onPress={() => navigation.navigate('Forgot')} label="Esqueci minha senha"/>
+            </View>
+            <ItemSeparator size="m" />
+            <View style={styles.linkContainer}>
+              <Button labelColor={palette.blue} labelWeight="bold" muted onPress={() => navigation.navigate('RegisterClient')} label="Não tem uma conta?"/>
+              <Button labelColor={palette.lightBlue} labelWeight="bold" muted onPress={() => navigation.navigate('RegisterClient')} label="Cadastre-se"/>
+            </View>
+            <View style={styles.linkContainer}>
+              <Button labelColor={palette.blue} labelWeight="bold" muted onPress={() => navigation.navigate('RegisterSpecialist')} label="É um especialista?"/>
+              <Button labelColor={palette.lightBlue} labelWeight="bold" muted onPress={() => navigation.navigate('RegisterSpecialist')} label="Cadastre-se"/>
             </View>
           </View>
       )}
@@ -94,14 +104,14 @@ const LoginForm = props => {
 };
 
 const styles = StyleSheet.create({
-  formContainer: {
-    flex: 1,
-  },
-  buttonContainer: {
-    marginTop: sizing.m,
+  linkContainer: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
-  }
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  forgotPasswordContainer: {
+    alignItems: 'center',
+  },
 });
 
 export default LoginForm;

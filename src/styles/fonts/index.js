@@ -7,8 +7,8 @@ export const fonts = {
   sizing: {
     xs: 12,
     s: 14,
-    m: 18,
-    l: 24,
+    m: 16,
+    l: 20,
     xl: 26,
     xxl: 32,
     xxxl: 40,

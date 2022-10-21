@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: sizing.s,
-    padding: sizing.m,
+    padding: sizing.s,
     borderWidth: 1,
   },
   iconStyle: {
