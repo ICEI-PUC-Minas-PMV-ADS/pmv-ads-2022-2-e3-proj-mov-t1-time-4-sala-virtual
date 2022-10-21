@@ -106,18 +106,16 @@ const InputLabel = props => {
 
 const styles = StyleSheet.create({
   containerStyle: {
-    marginBottom: sizing.m,
+    height: 80,
   },
   errorContainer: {
-    paddingBottom: sizing.s,
+    flex: 1,
   },
   errorStyle: {
-    width: '100%',
     color: palette.red,
     marginTop: sizing.s,
   },
   textInputStyle: {
-    width: '100%',
     fontFamily: fonts.sans.normal.regular,
     fontSize: fonts.sizing.m,
     borderBottomWidth: 1,
