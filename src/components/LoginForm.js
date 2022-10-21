@@ -82,9 +82,9 @@ const LoginForm = props => {
               secureTextEntry={true}
               autoCapitalize="none"
             />
-            <ItemSeparator size="m" />
+            <ItemSeparator size="xl" />
             <Button color={colors.primary} label="Entrar" labelColor={palette.white} labelWeight="bold" labelSize="l" onPress={handleSubmit} />
-            <ItemSeparator size="s" />
+            <ItemSeparator size="m" />
             <View style={styles.forgotPasswordContainer}>
               <Button labelColor={palette.lightBlue} labelWeight="bold" muted onPress={() => navigation.navigate('Forgot')} label="Esqueci minha senha"/>
             </View>

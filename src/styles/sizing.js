@@ -3,5 +3,5 @@ export const sizing = {
   m: 16,
   l: 24,
   xl: 48,
-  xxl: 64,
+  xxl: 56,
 };

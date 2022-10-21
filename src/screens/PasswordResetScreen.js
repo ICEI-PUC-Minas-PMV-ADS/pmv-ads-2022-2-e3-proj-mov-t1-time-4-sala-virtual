@@ -1,18 +1,31 @@
 import React from 'react';
-import {StyleSheet, Text} from 'react-native';
+import {Image, StyleSheet} from 'react-native';
 import ScreenWrapper from '../components/ScreenWrapper';
+import ItemSeparator from '../components/ItemSeparator';
+import PasswordResetForm from '../components/PasswordResetForm';
 
-const PasswordResetScreen = () => (
-    <ScreenWrapper style={styles.appContainer}>
-        <Text>Redefinir senha</Text>
+const PasswordResetScreen = () => {
+  return (
+    <ScreenWrapper style={styles.container}>
+      <Image
+        style={styles.logoImage}
+        source={require('../assets/images/logo.png')}
+      />
+      <ItemSeparator size="xl" />
+      <PasswordResetForm />
     </ScreenWrapper>
-);
+  );
+};
 
 const styles = StyleSheet.create({
-    appContainer: {
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
+  container: {
+    justifyContent: 'center',
+  },
+  logoImage: {
+    height: 84,
+    resizeMode: 'contain',
+    alignSelf: 'center',
+  },
 });
 
 export default PasswordResetScreen;
