@@ -35,9 +35,10 @@ const ForgotForm = () => {
       }}>
       {({handleChange, handleBlur, values, errors, touched, handleSubmit}) => (
         <View>
-          <AppText color={palette.black} align={'center'} size="m">
-            Para redefinir a sua senha, informe o usuário ou e-mail cadastrado
-            na sua conta e lhe enviaremos um link com as instruções
+          <AppText color={palette.black} align={'center'}>
+            {
+              'Para redefinir a sua senha, informe o\nusuário ou e-mail cadastrado na sua\nconta e lhe enviaremos um link\ncom as instruções'
+            }
           </AppText>
           <ItemSeparator size="xl" />
           <InputLabel
@@ -49,9 +50,8 @@ const ForgotForm = () => {
             touched={touched.email}
             keyboardType="email-address"
             autoCapitalize="none"
-            r
           />
-          <ItemSeparator size="l" />
+          <ItemSeparator size="xl" />
           <Button
             label="Enviar"
             color={palette.blue}

@@ -6,9 +6,8 @@ import PasswordResetForm from '../components/PasswordResetForm';
 
 const PasswordResetScreen = () => {
   return (
-    <ScreenWrapper style={styles.appContainer}>
-      <ItemSeparator size="xl" />
-        <Image
+    <ScreenWrapper style={styles.container}>
+      <Image
         style={styles.logoImage}
         source={require('../assets/images/logo.png')}
       />
@@ -19,14 +18,14 @@ const PasswordResetScreen = () => {
 };
 
 const styles = StyleSheet.create({
-    container: {
-      justifyContent: 'center',
-    },
-    logoImage: {
-      height: 84,
-      resizeMode: 'contain',
-      alignSelf: 'center',
-    },
-  });
+  container: {
+    justifyContent: 'center',
+  },
+  logoImage: {
+    height: 84,
+    resizeMode: 'contain',
+    alignSelf: 'center',
+  },
+});
 
 export default PasswordResetScreen;

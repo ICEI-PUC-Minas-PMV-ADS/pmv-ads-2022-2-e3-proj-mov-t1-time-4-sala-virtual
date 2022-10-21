@@ -7,7 +7,6 @@ import ForgotForm from '../components/ForgotForm';
 const ForgotScreen = () => {
   return (
     <ScreenWrapper style={styles.container}>
-      <ItemSeparator size="xl" />
       <Image
         style={styles.logoImage}
         source={require('../assets/images/logo.png')}
