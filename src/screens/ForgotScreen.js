@@ -1,27 +1,32 @@
 import React from 'react';
-import {StyleSheet, Text} from 'react-native';
+import {Image, StyleSheet} from 'react-native';
 import ScreenWrapper from '../components/ScreenWrapper';
 import ItemSeparator from '../components/ItemSeparator';
-import Button from '../components/Button';
-import {palette} from '../styles/palette';
-import {useNavigation} from '@react-navigation/native';
+import ForgotForm from '../components/ForgotForm';
 
 const ForgotScreen = () => {
-    const navigation = useNavigation();
-    return (
-      <ScreenWrapper style={styles.appContainer}>
-          <Text>Esqueci minha senha</Text>
-          <ItemSeparator/>
-          <Button label="Redefinir senha" color={palette.darkBlue} labelColor={palette.white} onPress={() => navigation.navigate('PasswordReset')}></Button>
-      </ScreenWrapper>
-    );
+  return (
+    <ScreenWrapper style={styles.container}>
+      <ItemSeparator size="xl" />
+      <Image
+        style={styles.logoImage}
+        source={require('../assets/images/logo.png')}
+      />
+      <ItemSeparator size="xl" />
+      <ForgotForm />
+    </ScreenWrapper>
+  );
 };
 
 const styles = StyleSheet.create({
-    appContainer: {
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
+  container: {
+    justifyContent: 'center',
+  },
+  logoImage: {
+    height: 84,
+    resizeMode: 'contain',
+    alignSelf: 'center',
+  },
 });
 
 export default ForgotScreen;

@@ -11,8 +11,6 @@ import {useAuth} from '../providers/auth';
 import {palette} from '../styles/palette';
 import {login} from '../networking/auth';
 
-import AppText from './AppText';
-
 import Button from './Button';
 import InputLabel from "./InputLabel";
 import ItemSeparator from './ItemSeparator';
@@ -88,16 +86,16 @@ const LoginForm = props => {
             <Button color={colors.primary} label="Entrar" labelColor={palette.white} labelWeight="bold" labelSize="l" onPress={handleSubmit} />
             <ItemSeparator size="s" />
             <View style={styles.forgotPasswordContainer}>
-              <Button labelColor={palette.lightBlue} labelSize="s" labelWeight="bold" muted onPress={() => navigation.navigate('Forgot')} label="Esqueci minha senha"/>
+              <Button labelColor={palette.lightBlue} labelWeight="bold" muted onPress={() => navigation.navigate('Forgot')} label="Esqueci minha senha"/>
             </View>
             <ItemSeparator size="m" />
             <View style={styles.linkContainer}>
-              <AppText size="xs" weight="bold" style={{textAlignVertical: "center"}}>Não tem uma conta? </AppText>
-              <Button labelColor={palette.lightBlue} labelWeight="bold" labelSize="xs" muted onPress={() => navigation.navigate('RegisterClient')} label="Cadastre-se"/>
+              <Button labelColor={palette.blue} labelWeight="bold" muted onPress={() => navigation.navigate('RegisterClient')} label="Não tem uma conta?"/>
+              <Button labelColor={palette.lightBlue} labelWeight="bold" muted onPress={() => navigation.navigate('RegisterClient')} label="Cadastre-se"/>
             </View>
             <View style={styles.linkContainer}>
-              <AppText size="xs" weight="bold" style={{textAlignVertical: "center"}}>Quer ser um especialista parceiro? </AppText>
-              <Button labelColor={palette.lightBlue} labelWeight="bold" labelSize="xs" muted onPress={() => navigation.navigate('RegisterSpecialist')} label="Cadastre-se"/>
+              <Button labelColor={palette.blue} labelWeight="bold" muted onPress={() => navigation.navigate('RegisterSpecialist')} label="É um especialista?"/>
+              <Button labelColor={palette.lightBlue} labelWeight="bold" muted onPress={() => navigation.navigate('RegisterSpecialist')} label="Cadastre-se"/>
             </View>
           </View>
       )}
