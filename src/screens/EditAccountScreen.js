@@ -78,13 +78,10 @@ const AccountScreen = props => {
                                         keyboardType="email-address"
                                         autoCapitalize="none"
                                     />
-                                    <InputLabel
-                                        style={{color: palette.red, borderColor: 'red'}}
+                                    <InputLabel                                      
                                         value={(state.user.document.number)}     
                                         editable={false}        
-                                        mask={CPF_MASK}    
-                                        placeholderTextColor='red'
-                                        underlineColorAndroid='red'                     
+                                        mask={CPF_MASK}                                                                
                                         />
                                         
                                     <InputLabel                                                                            
