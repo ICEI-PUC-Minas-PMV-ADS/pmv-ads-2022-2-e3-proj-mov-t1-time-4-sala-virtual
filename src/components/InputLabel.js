@@ -30,7 +30,7 @@ const InputLabel = props => {
     autoCapitalize,
     secureTextEntry,
     autoFocus,
-    editable,        
+    disabled,        
   } = props;
   const [innerValue, setInnerValue] = useState('');
   const [focus, setFocus] = useState(false);
@@ -80,7 +80,7 @@ const InputLabel = props => {
           </AppText>
           <TextInput
             ref={fieldRef}
-            style={[styles.textInputStyle, {color: colors.text, borderColor: error && touched ? palette.red : (focus ? palette.green : colors.text)}]}
+            style={[styles.textInputStyle, {color: disabled ? hexToRGBA(palette.black, 0.6) : colors.text, borderColor: disabled ? hexToRGBA(palette.black, 0.6) : (error && touched ? palette.red : (focus ? palette.green : colors.text))}]}
             placeholder={placeholder}
             onChangeText={_onChangeInput}
             onBlur={_onBlur}
@@ -91,7 +91,7 @@ const InputLabel = props => {
             autoCapitalize={autoCapitalize}
             secureTextEntry={secureTextEntry ?? false}
             autoFocus={autoFocus}
-            editable={editable}
+            editable={disabled ? false : true}
           />
         </View>
       </TapGestureHandler>
