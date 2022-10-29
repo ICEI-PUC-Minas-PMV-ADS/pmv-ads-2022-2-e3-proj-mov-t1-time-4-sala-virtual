@@ -30,6 +30,7 @@ const InputLabel = props => {
     autoCapitalize,
     secureTextEntry,
     autoFocus,
+    editable,        
   } = props;
   const [innerValue, setInnerValue] = useState('');
   const [focus, setFocus] = useState(false);
@@ -90,6 +91,7 @@ const InputLabel = props => {
             autoCapitalize={autoCapitalize}
             secureTextEntry={secureTextEntry ?? false}
             autoFocus={autoFocus}
+            editable={editable}
           />
         </View>
       </TapGestureHandler>
