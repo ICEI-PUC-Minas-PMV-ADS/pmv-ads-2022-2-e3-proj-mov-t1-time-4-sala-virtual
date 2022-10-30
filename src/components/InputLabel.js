@@ -30,7 +30,9 @@ const InputLabel = props => {
     autoCapitalize,
     secureTextEntry,
     autoFocus,
-    disabled,        
+    icon,
+    iconColor,
+    disabled,
   } = props;
   const [innerValue, setInnerValue] = useState('');
   const [focus, setFocus] = useState(false);
@@ -67,6 +69,7 @@ const InputLabel = props => {
     }
     fieldRef.current.focus();
   };
+  const SalaVirtualIcon = fonts.icons;
   return (
     <View style={styles.containerStyle}>
       <TapGestureHandler onHandlerStateChange={_onTapInput}>
@@ -78,21 +81,32 @@ const InputLabel = props => {
             }>
             {props.label}
           </AppText>
-          <TextInput
-            ref={fieldRef}
-            style={[styles.textInputStyle, {color: disabled ? hexToRGBA(palette.black, 0.6) : colors.text, borderColor: disabled ? hexToRGBA(palette.black, 0.6) : (error && touched ? palette.red : (focus ? palette.green : colors.text))}]}
-            placeholder={placeholder}
-            onChangeText={_onChangeInput}
-            onBlur={_onBlur}
-            onFocus={_onFocus}
-            value={innerValue}
-            placeholderTextColor={hexToRGBA(colors.text, 0.8)}
-            keyboardType={keyboardType ?? 'default'}
-            autoCapitalize={autoCapitalize}
-            secureTextEntry={secureTextEntry ?? false}
-            autoFocus={autoFocus}
-            editable={disabled ? false : true}
-          />
+          <View style={styles.inputContainer}>
+            <TextInput
+              ref={fieldRef}
+              style={[styles.textInputStyle, {paddingRight: icon ? sizing.l : 0}, {color: disabled ? hexToRGBA(palette.black, 0.6) : colors.text, borderColor: disabled ? hexToRGBA(palette.black, 0.6) : (error && touched ? palette.red : (focus ? palette.green : colors.text))}]}
+              placeholder={placeholder}
+              onChangeText={_onChangeInput}
+              onBlur={_onBlur}
+              onFocus={_onFocus}
+              value={innerValue}
+              placeholderTextColor={hexToRGBA(colors.text, 0.8)}
+              keyboardType={keyboardType ?? 'default'}
+              autoCapitalize={autoCapitalize}
+              secureTextEntry={secureTextEntry ?? false}
+              autoFocus={autoFocus}
+              editable={disabled ? false : true}
+            />
+            {icon && (
+              <View style={styles.iconContainer}>
+                <SalaVirtualIcon
+                  name={icon}
+                  size={20}
+                  color={iconColor ?? colors.text}
+                />
+              </View>
+            )}
+          </View>
         </View>
       </TapGestureHandler>
       {error && touched && (
@@ -116,6 +130,13 @@ const styles = StyleSheet.create({
   errorStyle: {
     color: palette.red,
     marginTop: sizing.s,
+  },
+  inputContainer: {
+    position: 'relative',
+  },
+  iconContainer: {
+    position: 'absolute',
+    right: 0,
   },
   textInputStyle: {
     fontFamily: fonts.sans.normal.regular,

@@ -12,8 +12,8 @@ import {sizing} from '../styles/sizing';
 import HomeScreen from '../screens/HomeScreen';
 import SearchScreen from '../screens/SearchScreen';
 import MeetingScreen from '../screens/MeetingScreen';
-import AccountScreen from '../screens/AccountScreen';
 import MainHeader from '../components/MainHeader';
+import AccountStack from './account';
 
 const SalaVirtualIcon = fonts.icons;
 
@@ -26,6 +26,7 @@ function getTabIcon(route) {
       return 'search';
     case 'meeting':
       return 'on';
+    case 'accountstack':
     case 'account':
       return 'user';
     default:
@@ -35,12 +36,23 @@ function getTabIcon(route) {
 
 function getScreenTitle(route) {
   switch (route.toLowerCase()) {
+    case 'accountstack':
+    case 'account':
+      return 'Ajustes de Conta';
+    default:
+      return getScreenLabel(route);
+  }
+}
+
+function getScreenLabel(route) {
+  switch (route.toLowerCase()) {
     case 'home':
       return 'Início';
     case 'search':
       return 'Busca';
     case 'meeting':
       return 'Reuniões';
+    case 'accountstack':
     case 'account':
       return 'Conta';
     default:
@@ -68,7 +80,7 @@ const Tab = () => {
         },
         tabBarLabel: ({focused, color}) => {
           color = focused ? colors.primary : palette.black;
-          return <AppText size="s" color={color} style={{lineHeight: sizing.m}}>{getScreenTitle(route.name)}</AppText>;
+          return <AppText size="s" color={color} style={{lineHeight: sizing.m}}>{getScreenLabel(route.name)}</AppText>;
         },
         tabBarIcon: ({focused, color, size}) => {
           color = focused ? colors.primary : palette.black;
@@ -84,7 +96,7 @@ const Tab = () => {
       <BottomTab.Screen name="Home" component={HomeScreen} options={{headerShown: false}} />
       <BottomTab.Screen name="Search" component={SearchScreen} />
       <BottomTab.Screen name="Meeting" component={MeetingScreen} />
-      <BottomTab.Screen name="Account" component={AccountScreen} />
+      <BottomTab.Screen name="AccountStack" component={AccountStack} />
     </BottomTab.Navigator>
   );
 };
