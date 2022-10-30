@@ -2,15 +2,32 @@ import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import AppText from './AppText';
 import {palette} from '../styles/palette';
+import {hexToRGBA} from '../helpers/hexToRGBA';
 import Button from './Button';
 import {sizing} from '../styles/sizing';
 import ItemSeparator from './ItemSeparator';
+import {fonts} from '../styles/fonts';
+
+const SalaVirtualIcon = fonts.icons;
 
 const AppointmentInfo = props => {
-  const {title} = props;
+  const {
+    title,
+    rounded,
+    specialist,
+    specialty,
+    date,
+    weekDay,
+    startEndHour,
+    duration,
+  } = props;
 
   return (
-    <View style={[styles.container, {paddingHorizontal: sizing.s}]}>
+    <View
+      style={[
+        styles.container,
+        {paddingHorizontal: sizing.s, borderRadius: rounded ? sizing.s : 0},
+      ]}>
       <ItemSeparator size="s" />
       <AppText color={palette.black} weight="bold">
         {title}
@@ -24,10 +41,10 @@ const AppointmentInfo = props => {
         <Button label="teste" muted style={{justifyContent: 'flex-start'}} />
         <View style={{paddingHorizontal: sizing.s}}>
           <AppText weight="bold" size="s">
-            Dra. Alice Costa
+            {specialist}
           </AppText>
           <AppText color={palette.black} size="xs">
-            Cardiologia
+            {specialty}
           </AppText>
         </View>
       </View>
@@ -47,10 +64,10 @@ const AppointmentInfo = props => {
         <Button label="teste" muted style={{justifyContent: 'flex-start'}} />
         <View style={{paddingHorizontal: sizing.s}}>
           <AppText weight="bold" size="s">
-            10/10/2022
+            {date}
           </AppText>
           <AppText color={palette.black} size="xs">
-            terça-feira
+            {weekDay}
           </AppText>
         </View>
       </View>
@@ -73,10 +90,10 @@ const AppointmentInfo = props => {
         </View>
         <View style={{paddingHorizontal: sizing.s}}>
           <AppText weight="bold" size="s">
-            09:00 AM - 10:00 AM
+            {startEndHour}
           </AppText>
           <AppText color={palette.black} size="xs">
-            1 hora
+            {duration}
           </AppText>
         </View>
       </View>
@@ -114,9 +131,7 @@ const AppointmentInfo = props => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: palette.extraLightBlue,
-    width: '100%',
-    borderRadius: sizing.s,
+    backgroundColor: hexToRGBA(palette.lightBlue, 0.1),
   },
   buttons: {
     flexDirection: 'row',
