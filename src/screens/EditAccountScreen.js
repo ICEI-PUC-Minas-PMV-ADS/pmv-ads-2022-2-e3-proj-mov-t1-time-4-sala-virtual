@@ -1,14 +1,11 @@
 import React from 'react';
-import MainHeader from '../components/MainHeader';
-import { StyleSheet, ScrollView } from 'react-native';
+import { Image, StyleSheet, View, ScrollView } from 'react-native';
 import ScreenWrapper from '../components/ScreenWrapper';
 import InputLabel from '../components/InputLabel';
-import { View } from 'react-native';
 import Button from '../components/Button';
 import { useAuth } from '../providers/auth';
 import { palette } from '../styles/palette';
 import AppText from '../components/AppText';
-import EditProfilePhoto from '../components/EditProfilePhoto';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { useNavigation } from '@react-navigation/native';
@@ -24,7 +21,7 @@ const EditAccountScreen = () => {
 
     const EditAccountSchema = Yup.object().shape({
         name: Yup.string()
-            .required('Preencha este campo.'),      
+            .required('Preencha este campo.'),
     })
     const navigation = useNavigation();
     const onEditProfileSubmit = async (values, { setSubmitting }) => {
@@ -38,9 +35,25 @@ const EditAccountScreen = () => {
 
     return (
         <ScreenWrapper >
-            <ScrollView>              
+            <ScrollView>
                 <View style={styles.photoTitleContainer}>
-                    <EditProfilePhoto />
+                    <View
+                        style={styles.editPhotoContainer}
+                    >
+                        <Image
+                            style={styles.photoStyled}
+                            source={require('../assets/images/defaultPhotoProfile.png')} />
+                        <View
+                            style={styles.editButtonContainer}>
+                            <Button
+                                style={styles.editButtonStyled}
+                                color={palette.blue}
+                                icon="edit"
+                                iconSize={14}
+                                labelColor={palette.white}                                
+                            />
+                        </View>
+                    </View>
                     <AppText
                         color={palette.darkBlue}
                         align={'center'}
@@ -57,7 +70,7 @@ const EditAccountScreen = () => {
                     }}>
                     {({ handleChange, handleBlur, handleSubmit, values, errors, touched }) => (
                         <>
-                            <View style={styles.appContainer}>
+                            <View style={styles.formContainer}>
                                 <InputLabel
                                     placeholder={state.user.name}
                                     value={values.name}
@@ -66,9 +79,9 @@ const EditAccountScreen = () => {
                                     error={errors.name}
                                     touched={touched.name}
                                 />
-                                <InputLabel                                    
+                                <InputLabel
                                     value={state.user.email}
-                                    disabled                                  
+                                    disabled
                                 />
                                 <InputLabel
                                     value={(state.user.document.number)}
@@ -112,18 +125,38 @@ const EditAccountScreen = () => {
 
 
 const styles = StyleSheet.create({
-    appContainer: {
+    formContainer: {
         marginLeft: sizing.m,
         marginRight: sizing.m,
         marginBottom: sizing.m,
     },
     buttonContainer: {
-        margin: sizing.m,
+        marginLeft: sizing.m,
+        marginRight: sizing.m,
+        marginBottom: sizing.m,        
+
     },
     photoTitleContainer: {
         marginTop: sizing.l,
         marginBottom: sizing.s,
     },
+    editPhotoContainer: {
+        position: 'relative',
+    },
+    editButtonContainer: {
+        position: 'absolute',
+        bottom: 10,
+        right: 115,
+    },
+    photoStyled: {
+        alignSelf: 'center',
+        marginBottom: 16,
+    },
+    editButtonStyled: {
+        borderRadius: 32,
+        width: 32,
+        height: 32,
+    }
 });
 
 export default EditAccountScreen;
