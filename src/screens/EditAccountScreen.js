@@ -50,7 +50,7 @@ const EditAccountScreen = () => {
                                 color={palette.blue}
                                 icon="edit"
                                 iconSize={14}
-                                labelColor={palette.white}                                
+                                labelColor={palette.white}
                             />
                         </View>
                     </View>
@@ -126,15 +126,10 @@ const EditAccountScreen = () => {
 
 const styles = StyleSheet.create({
     formContainer: {
-        marginLeft: sizing.m,
-        marginRight: sizing.m,
         marginBottom: sizing.m,
     },
     buttonContainer: {
-        marginLeft: sizing.m,
-        marginRight: sizing.m,
-        marginBottom: sizing.m,        
-
+        marginBottom: sizing.m,
     },
     photoTitleContainer: {
         marginTop: sizing.l,
@@ -150,7 +145,7 @@ const styles = StyleSheet.create({
     },
     photoStyled: {
         alignSelf: 'center',
-        marginBottom: 16,
+        marginBottom: sizing.m,
     },
     editButtonStyled: {
         borderRadius: 32,
