@@ -7,9 +7,9 @@ import {useAuth} from '../providers/auth';
 const HomeScreen = () => {
     const {state} = useAuth();
     return (
-      <ScreenWrapper style={styles.appContainer}>
-          <Text>Olá, {state.user.name}</Text>
-      </ScreenWrapper>
+        <ScreenWrapper style={styles.appContainer}>
+            <Text>Olá, {state.user.name}</Text>
+        </ScreenWrapper>
     );
 };
 

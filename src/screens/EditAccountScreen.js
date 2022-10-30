@@ -22,16 +22,16 @@ const EditAccountScreen = () => {
     const EditAccountSchema = Yup.object().shape({
         name: Yup.string()
             .required('Preencha este campo.'),
-    })
+    });
     const navigation = useNavigation();
     const onEditProfileSubmit = async (values, { setSubmitting }) => {
         setSubmitting(true);
         navigation.navigate('Home');
         setSubmitting(false);
-    }
+    };
     const redefinePassword = () => {
         navigation.navigate('Home');
-    }
+    };
 
     return (
         <ScreenWrapper >
@@ -90,7 +90,7 @@ const EditAccountScreen = () => {
                                 />
 
                                 <InputLabel
-                                    value={(state.user.birthDate.split("-").reverse().join("-"))}
+                                    value={(state.user.birthDate.split('-').reverse().join('-'))}
                                     disabled
                                     mask={BIRTHDATE_MASK}
                                 />
@@ -120,8 +120,8 @@ const EditAccountScreen = () => {
             </ScrollView>
         </ScreenWrapper>
 
-    )
-}
+    );
+};
 
 
 const styles = StyleSheet.create({

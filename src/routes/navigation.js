@@ -25,14 +25,14 @@ const Navigation = () => {
         hideSplash();
     }, [state, isReady]);
     return !fontsLoaded ? null : (
-    <GestureHandlerRootView
-        style={{flex: 1, backgroundColor: theme.colors.background}}>
-        <NavigationContainer
-        theme={theme}
-        onReady={onAppReady}>
-            <Auth />
-        </NavigationContainer>
-    </GestureHandlerRootView>
+        <GestureHandlerRootView
+            style={{flex: 1, backgroundColor: theme.colors.background}}>
+            <NavigationContainer
+                theme={theme}
+                onReady={onAppReady}>
+                <Auth />
+            </NavigationContainer>
+        </GestureHandlerRootView>
     );
 };
 

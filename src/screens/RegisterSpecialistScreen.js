@@ -8,8 +8,8 @@ const RegisterSpecialistScreen = () => (
     <ScreenWrapper scroll>
         <ItemSeparator size="xl" />
         <Image
-          style={styles.logoImage}
-          source={require('../assets/images/logo.png')}
+            style={styles.logoImage}
+            source={require('../assets/images/logo.png')}
         />
         <ItemSeparator size="xl" />
         <RegisterForm type="specialist" />
