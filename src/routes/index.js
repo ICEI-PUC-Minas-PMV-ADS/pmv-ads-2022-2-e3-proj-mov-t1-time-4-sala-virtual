@@ -14,6 +14,7 @@ import SearchScreen from '../screens/SearchScreen';
 import MeetingScreen from '../screens/MeetingScreen';
 import MainHeader from '../components/MainHeader';
 import AccountStackScreen from './account';
+import SearchSpecialistScreen from '../screens/SearchSpecialistScreen';
 
 const SalaVirtualIcon = fonts.icons;
 
@@ -33,7 +34,7 @@ function getTabIcon(route) {
   }
 }
 
-function getScreenLabel(route) {
+function getScreenTitle(route) {
   switch (route.toLowerCase()) {
     case 'home':
       return 'Início';
