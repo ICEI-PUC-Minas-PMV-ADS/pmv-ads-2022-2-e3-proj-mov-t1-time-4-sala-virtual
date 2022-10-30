@@ -72,12 +72,12 @@ const AppointmentInfo = props => {
           <View style={{flex: 1, height: 1, backgroundColor: palette.white}} />
         </View>
         <View style={{paddingHorizontal: sizing.s}}>
-        <AppText weight="bold" size="s">
-          09:00 AM - 10:00 AM
-        </AppText>
-        <AppText color={palette.black} size="xs">
-          1 hora
-        </AppText>
+          <AppText weight="bold" size="s">
+            09:00 AM - 10:00 AM
+          </AppText>
+          <AppText color={palette.black} size="xs">
+            1 hora
+          </AppText>
         </View>
       </View>
 
@@ -90,14 +90,22 @@ const AppointmentInfo = props => {
           labelWeight="bold"
           labelColor={palette.blue}
           outline={palette.blue}
-          style={{backgroundColor: palette.white, paddingVertical: (sizing.s/2), width: '45%'}}></Button>
+          style={{
+            backgroundColor: palette.white,
+            paddingVertical: sizing.s / 2,
+            width: '45%',
+          }}></Button>
         <Button
           label="Cancelar"
           color={palette.red}
           labelWeight="bold"
           labelColor={palette.red}
-          outline={palette.red}
-          style={{backgroundColor: palette.white, paddingVertical: (sizing.s/2), width: '45%'}}></Button>
+          outline
+          style={{
+            backgroundColor: palette.white,
+            paddingVertical: sizing.s / 2,
+            width: '45%',
+          }}></Button>
       </View>
       <ItemSeparator size="m" />
     </View>
@@ -107,14 +115,14 @@ const AppointmentInfo = props => {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: palette.extraLightBlue,
-    width: '95%',
-    borderRadius: sizing.m,
+    width: '100%',
+    borderRadius: sizing.s,
   },
   buttons: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '70%',
-    alignSelf: 'center'
+    alignSelf: 'center',
   },
 });
 
