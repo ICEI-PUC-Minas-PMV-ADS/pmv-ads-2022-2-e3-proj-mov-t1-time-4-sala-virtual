@@ -14,6 +14,7 @@ import SearchScreen from '../screens/SearchScreen';
 import MeetingScreen from '../screens/MeetingScreen';
 import AccountScreen from '../screens/AccountScreen';
 import MainHeader from '../components/MainHeader';
+import SearchSpecialistScreen from '../screens/SearchSpecialistScreen';
 
 const SalaVirtualIcon = fonts.icons;
 
@@ -57,9 +58,7 @@ const Tab = () => {
       initialRouteName="Home"
       screenOptions={({route}) => ({
         header: () => {
-          return (
-            <MainHeader title={getScreenTitle(route.name)} />
-          );
+          return <MainHeader title={getScreenTitle(route.name)} />;
         },
         tabBarStyle: {
           height: sizing.l * (Platform.OS === 'android' ? 2.5 : 3.5),
@@ -68,7 +67,11 @@ const Tab = () => {
         },
         tabBarLabel: ({focused, color}) => {
           color = focused ? colors.primary : palette.black;
-          return <AppText size="s" color={color} style={{lineHeight: sizing.m}}>{getScreenTitle(route.name)}</AppText>;
+          return (
+            <AppText size="s" color={color} style={{lineHeight: sizing.m}}>
+              {getScreenTitle(route.name)}
+            </AppText>
+          );
         },
         tabBarIcon: ({focused, color, size}) => {
           color = focused ? colors.primary : palette.black;
@@ -81,7 +84,11 @@ const Tab = () => {
           );
         },
       })}>
-      <BottomTab.Screen name="Home" component={HomeScreen} options={{headerShown: false}} />
+      <BottomTab.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{headerShown: false}}
+      />
       <BottomTab.Screen name="Search" component={SearchScreen} />
       <BottomTab.Screen name="Meeting" component={MeetingScreen} />
       <BottomTab.Screen name="Account" component={AccountScreen} />
