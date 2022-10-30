@@ -32,6 +32,7 @@ const InputLabel = props => {
     autoFocus,
     icon,
     iconColor,
+    disabled,
   } = props;
   const [innerValue, setInnerValue] = useState('');
   const [focus, setFocus] = useState(false);
@@ -83,7 +84,7 @@ const InputLabel = props => {
           <View style={styles.inputContainer}>
             <TextInput
               ref={fieldRef}
-              style={[styles.textInputStyle, {paddingRight: icon ? sizing.l : 0}, {color: colors.text, borderColor: error && touched ? palette.red : (focus ? palette.green : colors.text)}]}
+              style={[styles.textInputStyle, {paddingRight: icon ? sizing.l : 0}, {color: disabled ? hexToRGBA(palette.black, 0.6) : colors.text, borderColor: disabled ? hexToRGBA(palette.black, 0.6) : (error && touched ? palette.red : (focus ? palette.green : colors.text))}]}
               placeholder={placeholder}
               onChangeText={_onChangeInput}
               onBlur={_onBlur}
@@ -94,6 +95,7 @@ const InputLabel = props => {
               autoCapitalize={autoCapitalize}
               secureTextEntry={secureTextEntry ?? false}
               autoFocus={autoFocus}
+              editable={disabled ? false : true}
             />
             {icon && (
               <View style={styles.iconContainer}>

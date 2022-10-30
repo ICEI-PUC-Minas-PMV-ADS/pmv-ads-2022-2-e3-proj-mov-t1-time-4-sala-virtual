@@ -10,8 +10,11 @@ import AppText from '../components/AppText';
 import {sizing} from '../styles/sizing';
 import {fonts} from '../styles/fonts';
 import {accountScreens} from '../routes/account';
+import Card from '../components/Card';
+import {useNavigation} from '@react-navigation/native';
 
 const AccountScreen = () => {
+  const navigation = useNavigation();
   const SalaVirtualIcon = fonts.icons;
   const signOutAlert = () =>
     Alert.alert(
@@ -26,7 +29,7 @@ const AccountScreen = () => {
       ]
     );
   const renderMenu = ({item}) => (
-    <View style={styles.rowContainer}>
+    <Card color="transparent" onPress={() => navigation.navigate(item.screen)} style={styles.rowContainer}>
       <SalaVirtualIcon name={item.icon} size={sizing.l} />
       <ItemSeparator size="l" />
       <View style={styles.textContainer}>
@@ -34,7 +37,7 @@ const AccountScreen = () => {
         <AppText size="xs" weight="regular" color={palette.darkGray}>{item.description}</AppText>
       </View>
       <SalaVirtualIcon  name={'right-1'} size={sizing.l} />
-    </View>
+    </Card>
   );
   const { handleSignOut, state } = useAuth();
   const {user} = state;
@@ -67,7 +70,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   signOutContainer: {
-    flex: 1,
     justifyContent:'flex-end',
   },
   listContainer:{
@@ -77,6 +79,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'flex-start',
+    padding: 0,
     paddingBottom: sizing.s,
     borderBottomWidth: 1,
     borderColor: palette.lightGray

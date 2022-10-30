@@ -13,7 +13,7 @@ import HomeScreen from '../screens/HomeScreen';
 import SearchScreen from '../screens/SearchScreen';
 import MeetingScreen from '../screens/MeetingScreen';
 import MainHeader from '../components/MainHeader';
-import AccountStack from './account';
+import AccountStackScreen from './account';
 
 const SalaVirtualIcon = fonts.icons;
 
@@ -26,21 +26,10 @@ function getTabIcon(route) {
       return 'search';
     case 'meeting':
       return 'on';
-    case 'accountstack':
     case 'account':
       return 'user';
     default:
       return 'home';
-  }
-}
-
-function getScreenTitle(route) {
-  switch (route.toLowerCase()) {
-    case 'accountstack':
-    case 'account':
-      return 'Ajustes de Conta';
-    default:
-      return getScreenLabel(route);
   }
 }
 
@@ -52,7 +41,6 @@ function getScreenLabel(route) {
       return 'Busca';
     case 'meeting':
       return 'Reuniões';
-    case 'accountstack':
     case 'account':
       return 'Conta';
     default:
@@ -70,7 +58,7 @@ const Tab = () => {
       screenOptions={({route}) => ({
         header: () => {
           return (
-            <MainHeader title={getScreenTitle(route.name)} />
+            <MainHeader title={getScreenLabel(route.name)} />
           );
         },
         tabBarStyle: {
@@ -96,7 +84,7 @@ const Tab = () => {
       <BottomTab.Screen name="Home" component={HomeScreen} options={{headerShown: false}} />
       <BottomTab.Screen name="Search" component={SearchScreen} />
       <BottomTab.Screen name="Meeting" component={MeetingScreen} />
-      <BottomTab.Screen name="AccountStack" component={AccountStack} />
+      <BottomTab.Screen name="Account" component={AccountStackScreen} options={{headerShown: false}} />
     </BottomTab.Navigator>
   );
 };
