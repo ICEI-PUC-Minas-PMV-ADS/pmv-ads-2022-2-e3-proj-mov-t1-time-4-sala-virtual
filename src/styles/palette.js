@@ -4,7 +4,7 @@ export const palette = {
     lightBlue: '#5691C2',
     darkGray: '#3D3D3D',
     lightGray: '#E7E7E7',
-    white: '#EEF4F9',
+    white: '#FFFFFF',
     green: '#4E961D',
     red: '#FF3B36',
     black: '#1A1A1A',

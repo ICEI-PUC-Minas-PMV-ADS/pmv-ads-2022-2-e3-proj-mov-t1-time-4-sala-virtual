@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, SafeAreaView, View, TouchableOpacity} from 'react-native';
-import {useNavigation, useRoute} from '@react-navigation/native';
+import {useNavigation, useRoute, useTheme} from '@react-navigation/native';
 
 import {sizing} from '../styles/sizing';
 import {fonts} from '../styles/fonts';
@@ -13,6 +13,7 @@ const SalaVirtualIcon = fonts.icons;
 const MainHeader = props => {
   const navigation = useNavigation();
   const route = useRoute();
+  const {colors} = useTheme();
   const handleGoBack = () => {
     if (route.params && 'fromScreen' in route.params) {
       navigation.goBack(null);
@@ -23,12 +24,13 @@ const MainHeader = props => {
     <View
       style={{
         paddingHorizontal: sizing.l,
-        marginTop: sizing.xxl
+        paddingTop: sizing.xl,
+        backgroundColor: colors.background,
       }}>
       <SafeAreaView>
         <View style={styles.headerContainer}>
           <AppHeaderText size="m" weight="400" color={palette.darkGray}>
-            {props.title.toUpperCase()}
+            {props.title.indexOf('/') > 0 ? props.title.split('/').reverse()[0].toUpperCase() : props.title.toUpperCase()}
           </AppHeaderText>
         </View>
         {props.title.indexOf('/') > 0 && (

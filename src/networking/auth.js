@@ -30,3 +30,12 @@ export async function login(data) {
     throw errHandler(e);
   }
 }
+
+export async function listCategories() {
+  try {
+    let res = await api.get('/specialty/categories');
+    return res.data;
+  } catch (e) {
+    throw errHandler(e);
+  }
+}

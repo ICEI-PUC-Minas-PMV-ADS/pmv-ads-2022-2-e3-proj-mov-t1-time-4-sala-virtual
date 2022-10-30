@@ -12,8 +12,8 @@ import {sizing} from '../styles/sizing';
 import HomeScreen from '../screens/HomeScreen';
 import SearchScreen from '../screens/SearchScreen';
 import MeetingScreen from '../screens/MeetingScreen';
-import AccountScreen from '../screens/AccountScreen';
 import MainHeader from '../components/MainHeader';
+import AccountStackScreen from './account';
 
 const SalaVirtualIcon = fonts.icons;
 
@@ -33,7 +33,7 @@ function getTabIcon(route) {
   }
 }
 
-function getScreenTitle(route) {
+function getScreenLabel(route) {
   switch (route.toLowerCase()) {
     case 'home':
       return 'Início';
@@ -90,7 +90,11 @@ const Tab = () => {
       />
       <BottomTab.Screen name="Search" component={SearchScreen} />
       <BottomTab.Screen name="Meeting" component={MeetingScreen} />
-      <BottomTab.Screen name="Account" component={AccountScreen} />
+      <BottomTab.Screen
+        name="Account"
+        component={AccountStackScreen}
+        options={{headerShown: false}}
+      />
     </BottomTab.Navigator>
   );
 };
