@@ -17,7 +17,7 @@ const SalaVirtualIcon = fonts.icons;
 const HomeScreen = () => {
   const {state} = useAuth();
   return (
-    <ScreenWrapper style={styles.appContainer}>
+    <ScreenWrapper style={styles.appContainer} scroll>
       <AppText
         weight="bold"
         size="l"
@@ -72,6 +72,8 @@ const HomeScreen = () => {
           </View>
         </Card>
       </View>
+
+      <ItemSeparator size="l"/>
     </ScreenWrapper>
   );
 };
