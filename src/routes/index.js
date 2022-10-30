@@ -14,7 +14,6 @@ import SearchScreen from '../screens/SearchScreen';
 import MeetingScreen from '../screens/MeetingScreen';
 import AccountScreen from '../screens/AccountScreen';
 import MainHeader from '../components/MainHeader';
-import SearchSpecialistScreen from '../screens/SearchSpecialistScreen';
 
 const SalaVirtualIcon = fonts.icons;
 
