@@ -34,11 +34,13 @@ const AppointmentInfo = props => {
       </AppText>
 
       <ItemSeparator size="s" />
-      <View
-        style={{
-          flexDirection: 'row',
-        }}>
-        <Button label="teste" muted style={{justifyContent: 'flex-start'}} />
+      <View style={styles.texts}>
+        <SalaVirtualIcon
+          name="on"
+          size={fonts.sizing.l + 1}
+          color={palette.black}
+          style={styles.icons}
+        />
         <View style={{paddingHorizontal: sizing.s}}>
           <AppText weight="bold" size="s">
             {specialist}
@@ -57,11 +59,14 @@ const AppointmentInfo = props => {
 
       <ItemSeparator size="s" />
 
-      <View
-        style={{
-          flexDirection: 'row',
-        }}>
-        <Button label="teste" muted style={{justifyContent: 'flex-start'}} />
+      <View style={styles.texts}>
+        <SalaVirtualIcon
+          name="calendar"
+          size={fonts.sizing.l + 1}
+          color={palette.black}
+          style={styles.icons}
+        />
+        {/* <Button label="teste" muted style={{justifyContent: 'flex-start'}} /> */}
         <View style={{paddingHorizontal: sizing.s}}>
           <AppText weight="bold" size="s">
             {date}
@@ -80,11 +85,13 @@ const AppointmentInfo = props => {
 
       <ItemSeparator size="s" />
 
-      <View
-        style={{
-          flexDirection: 'row',
-        }}>
-        <Button label="teste" muted style={{justifyContent: 'flex-start'}} />
+      <View style={styles.texts}>
+        <SalaVirtualIcon
+          name="clock"
+          size={fonts.sizing.l + 1}
+          color={palette.black}
+          style={styles.icons}
+        />
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <View style={{flex: 1, height: 1, backgroundColor: palette.white}} />
         </View>
@@ -137,6 +144,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '70%',
+    alignSelf: 'center',
+  },
+  texts: {
+    flexDirection: 'row',
+    paddingHorizontal: sizing.s,
+  },
+  icons: {
     alignSelf: 'center',
   },
 });
