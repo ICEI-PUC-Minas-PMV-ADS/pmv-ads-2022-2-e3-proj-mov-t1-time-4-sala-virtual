@@ -6,153 +6,155 @@ import {hexToRGBA} from '../helpers/hexToRGBA';
 import Button from './Button';
 import {sizing} from '../styles/sizing';
 import ItemSeparator from './ItemSeparator';
+import LineSeparator from './LineSeparator';
 import {fonts} from '../styles/fonts';
 
 const SalaVirtualIcon = fonts.icons;
 
 const AppointmentInfo = props => {
-  const {
-    title,
-    rounded,
-    specialist,
-    specialty,
-    date,
-    weekDay,
-    startEndHour,
-    duration,
-  } = props;
+    const {
+        title,
+        specialist,
+        specialty,
+        date,
+        weekDay,
+        startEndHour,
+        duration,
+    } = props;
 
-  return (
-    <View
-      style={[
-        styles.container,
-        {paddingHorizontal: sizing.s, borderRadius: rounded ? sizing.s : 0},
-      ]}>
-      <ItemSeparator size="s" />
-      <AppText color={palette.black} weight="bold">
-        {title}
-      </AppText>
+    return (
+        <View style={styles.container}>
+            {title && (
+                <View>
+                    <AppText color={palette.black} weight="bold">
+                        {title}
+                    </AppText>
+                    <ItemSeparator size="s" />
+                </View>
+            )}
+            <View style={styles.infoContainer}>
+                <View style={styles.iconContainer}>
+                    <SalaVirtualIcon
+                        name="on"
+                        size={fonts.sizing.l + 2}
+                        color={palette.black}
+                    />
+                </View>
+                <ItemSeparator size="l" />
+                <View style={styles.textContainer}>
+                    <AppText style={styles.infoHeader} weight="bold" size="s">
+                        {specialist}
+                    </AppText>
+                    <AppText color={palette.gray} size="xs">
+                        {specialty}
+                    </AppText>
+                </View>
+            </View>
 
-      <ItemSeparator size="s" />
-      <View style={styles.texts}>
-        <SalaVirtualIcon
-          name="on"
-          size={fonts.sizing.l + 1}
-          color={palette.black}
-          style={styles.icons}
-        />
-        <View style={{paddingHorizontal: sizing.s}}>
-          <AppText weight="bold" size="s">
-            {specialist}
-          </AppText>
-          <AppText color={palette.black} size="xs">
-            {specialty}
-          </AppText>
+            <ItemSeparator size="s" />
+
+            <LineSeparator />
+
+            <ItemSeparator size="s" />
+
+            <View style={styles.infoContainer}>
+                <View style={styles.iconContainer}>
+                    <SalaVirtualIcon
+                        name="calendar"
+                        size={fonts.sizing.l + 2}
+                        color={palette.black}
+                    />
+                </View>
+                <ItemSeparator size="l" />
+                <View style={styles.textContainer}>
+                    <AppText style={styles.infoHeader} weight="bold" size="s">
+                        {date}
+                    </AppText>
+                    <AppText color={palette.gray} size="xs">
+                        {weekDay}
+                    </AppText>
+                </View>
+            </View>
+
+            <ItemSeparator size="s" />
+
+            <LineSeparator />
+
+            <ItemSeparator size="s" />
+
+            <View style={styles.infoContainer}>
+                <View style={styles.iconContainer}>
+                    <SalaVirtualIcon
+                        name="clock"
+                        size={fonts.sizing.l + 2}
+                        color={palette.black}
+                    />
+                </View>
+                <ItemSeparator size="l" />
+                <View style={styles.textContainer}>
+                    <AppText style={styles.infoHeader} weight="bold" size="s">
+                        {startEndHour}
+                    </AppText>
+                    <AppText color={palette.gray} size="xs">
+                        {duration}
+                    </AppText>
+                </View>
+            </View>
+
+            <ItemSeparator size="s" />
+
+            <View style={styles.buttonContainer}>
+                <Button
+                    label="Entrar"
+                    color={palette.blue}
+                    labelWeight="bold"
+                    labelSize="s"
+                    labelColor={palette.blue}
+                    outline={palette.blue}
+                    style={styles.button}
+                />
+                <ItemSeparator size="l" />
+                <Button
+                    label="Cancelar"
+                    color={palette.red}
+                    labelWeight="bold"
+                    labelSize="s"
+                    labelColor={palette.red}
+                    outline
+                    style={styles.button}
+                />
+            </View>
         </View>
-      </View>
-
-      <ItemSeparator size="s" />
-
-      <View style={{flexDirection: 'row', alignItems: 'center'}}>
-        <View style={{flex: 1, height: 1, backgroundColor: palette.white}} />
-      </View>
-
-      <ItemSeparator size="s" />
-
-      <View style={styles.texts}>
-        <SalaVirtualIcon
-          name="calendar"
-          size={fonts.sizing.l + 1}
-          color={palette.black}
-          style={styles.icons}
-        />
-        {/* <Button label="teste" muted style={{justifyContent: 'flex-start'}} /> */}
-        <View style={{paddingHorizontal: sizing.s}}>
-          <AppText weight="bold" size="s">
-            {date}
-          </AppText>
-          <AppText color={palette.black} size="xs">
-            {weekDay}
-          </AppText>
-        </View>
-      </View>
-
-      <ItemSeparator size="s" />
-
-      <View style={{flexDirection: 'row', alignItems: 'center'}}>
-        <View style={{flex: 1, height: 1, backgroundColor: palette.white}} />
-      </View>
-
-      <ItemSeparator size="s" />
-
-      <View style={styles.texts}>
-        <SalaVirtualIcon
-          name="clock"
-          size={fonts.sizing.l + 1}
-          color={palette.black}
-          style={styles.icons}
-        />
-        <View style={{flexDirection: 'row', alignItems: 'center'}}>
-          <View style={{flex: 1, height: 1, backgroundColor: palette.white}} />
-        </View>
-        <View style={{paddingHorizontal: sizing.s}}>
-          <AppText weight="bold" size="s">
-            {startEndHour}
-          </AppText>
-          <AppText color={palette.black} size="xs">
-            {duration}
-          </AppText>
-        </View>
-      </View>
-
-      <ItemSeparator size="s" />
-
-      <View style={styles.buttons}>
-        <Button
-          label="Entrar"
-          color={palette.blue}
-          labelWeight="bold"
-          labelColor={palette.blue}
-          outline={palette.blue}
-          style={{
-            backgroundColor: palette.white,
-            paddingVertical: sizing.s / 2,
-            width: '45%',
-          }}></Button>
-        <Button
-          label="Cancelar"
-          color={palette.red}
-          labelWeight="bold"
-          labelColor={palette.red}
-          outline
-          style={{
-            backgroundColor: palette.white,
-            paddingVertical: sizing.s / 2,
-            width: '45%',
-          }}></Button>
-      </View>
-      <ItemSeparator size="m" />
-    </View>
-  );
+    );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: hexToRGBA(palette.lightBlue, 0.1),
-  },
-  buttons: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    width: '70%',
-    alignSelf: 'center',
-  },
-  texts: {
-    flexDirection: 'row',
-    paddingHorizontal: sizing.s,
-  },
-  icons: {
-    alignSelf: 'center',
-  },
+    container: {
+        padding: sizing.m,
+        borderRadius: sizing.s,
+        backgroundColor: hexToRGBA(palette.lightBlue, 0.1),
+    },
+    infoContainer: {
+        flexDirection: 'row',
+    },
+    iconContainer: {
+        justifyContent: 'center',
+    },
+    infoHeader: {
+        marginBottom: 2,
+    },
+    textContainer: {
+        flex: 1,
+    },
+    buttonContainer: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'center',
+    },
+    button: {
+        width: 88,
+        backgroundColor: palette.white,
+    }
 });
 
 export default AppointmentInfo;
