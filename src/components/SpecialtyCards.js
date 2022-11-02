@@ -1,5 +1,5 @@
 import React from 'react'
-import {Text,StyleSheet,View,Pressable} from 'react-native'
+import {Text,StyleSheet,View,ScrollView,Scro} from 'react-native'
 
 import {sizing} from '../styles/sizing';
 import {palette} from '../styles/palette';
@@ -7,37 +7,33 @@ import { fonts } from '../styles/fonts';
 import {hexToRGBA} from '../helpers/hexToRGBA';
 
 import ItemSeparator from './ItemSeparator';
-import Button from '../components/Button';
+import Card from './CardButton';
+import AppText from './AppText';
 
 
 export default props => {
-    //const specialtyList = props.objectList
-    const specialtyList = [
-        {id: 1, name:'Medico 1'},
-        {id: 2, name:'Medico 2'},
-        {id: 3, name:'Medico 3'},
-        {id: 4, name:'Medico 4'},
-    ]
+
+    const specialtyList = props.objectList.length === 0 ? [] : props.objectList
+    console.log(props.objectList.length)
     const SalaVirtualIcon = fonts.icons;
+
     function lista() {
         return specialtyList.map(s => {
             return ( 
-                <>
-                    <ItemSeparator size='s'/>
-                    <Button 
-                    style={styles.teste}
-                    label = {[
-                        s.name,
-                        <SalaVirtualIcon
-                            name = "down-2"
-                            size={fonts.sizing.l}
-                            color={palette.black}
-                        />,
-                    ]}
-                    labelSize = "s"
-                    color = {hexToRGBA(palette.black,0.3)}
-                    outline></Button>
-                </>
+                <View style={styles.cardContainer}>
+                    <Card
+                        rounded
+                        color = {hexToRGBA(palette.lightBlue,0.1)}
+                    >
+                        <View style = {styles.textContainer}>
+                            <AppText size="l" weight = 'bold' color={palette.darkBlue} style={styles.cardText}>
+                                    {s.name.toUpperCase()}
+                            </AppText>
+                            <SalaVirtualIcon name='right' size={fonts.sizing.l} color={palette.blue}/>
+                        </View>
+                    </Card>
+                    <ItemSeparator size={sizing.m} />
+                </View>
             )
         })
 
@@ -46,7 +42,10 @@ export default props => {
     return(
         <View>
             <Text style={styles.titleContainer}>{props.title}</Text>
-            {lista()}
+            <ScrollView showsVerticalScrollIndicator={false}>
+                {lista()}
+            </ScrollView>
+            <ItemSeparator size={sizing.xxl*3} />
         </View>
     )
 }
@@ -57,13 +56,20 @@ const styles = StyleSheet.create({
         lineHeight: 52,
         color: palette.darkBlue,
         fontWeight: '600',
-        paddingBottom: sizing.m*2,
+        paddingBottom: sizing.m,
         textAlign: 'center'
     },
-    teste:{
-        width:336,
-        backgroundColor: palette.lightBlue
-
-    }
-
+    cardContainer:{
+        width: 336,
+    },
+    textContainer:{
+        flexDirection:'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        paddingLeft: sizing.s,
+        paddingRight: sizing.s,
+    },
+    scrollContainer:{
+        
+    },
 })
