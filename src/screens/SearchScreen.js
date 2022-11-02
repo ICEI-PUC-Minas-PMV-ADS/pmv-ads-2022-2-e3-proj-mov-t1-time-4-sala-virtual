@@ -5,14 +5,18 @@ import ScreenWrapper from '../components/ScreenWrapper';
 import {sizing} from '../styles/sizing';
 import {palette} from '../styles/palette';
 
-import ListaTeste from '../components/SpecialtyCards'
 import GenericSearch from '../components/GenericSearch';
+import ItemSeparator from '../components/ItemSeparator';
+import SpecialtyCards from '../components/SpecialtyCards';
 
 const SearchScreen = () => (
     <ScreenWrapper style={styles.appContainer}>
+        <ItemSeparator size='m'/>
         <Text> z              Retornar</Text>
+        <ItemSeparator size='m'/>
         <GenericSearch />
-        <ListaTeste title = "Medicina"/>
+        <SpecialtyCards />
+        
         
     </ScreenWrapper>
 );
@@ -20,13 +24,8 @@ const SearchScreen = () => (
 const styles = StyleSheet.create({
     appContainer: {
         alignItems: 'center',
-        paddingTop: sizing.m*3
+        margin:sizing.m
     },
-    textContainer: {
-        paddingTop: sizing.xxl,
-    },
-
-
 });
 
 export default SearchScreen;

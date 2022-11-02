@@ -1,6 +1,8 @@
 import React from 'react';
 import {StyleSheet, Text} from 'react-native';
+
 import ScreenWrapper from '../components/ScreenWrapper';
+import ItemSeparator from '../components/ItemSeparator';
 
 const SearchScreen = () => (
     <ScreenWrapper style={styles.appContainer}>
