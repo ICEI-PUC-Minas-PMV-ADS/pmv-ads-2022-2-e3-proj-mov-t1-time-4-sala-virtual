@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {FlatList, StyleSheet, View} from 'react-native';
 import ScreenWrapper from '../components/ScreenWrapper';
 import GenericSearch from '../components/GenericSearch';
-import {useRoute} from '@react-navigation/native';
+import {useRoute, useNavigation} from '@react-navigation/native';
 import AppText from '../components/AppText';
 import {listSpecialties} from '../networking/auth';
 import Card from '../components/Card';
@@ -14,17 +14,18 @@ import {fonts} from '../styles/fonts';
 
 const SearchSpecialtyScreen = () => {
     const SalaVirtualIcon = fonts.icons;
+    const navigation = useNavigation();
     const route = useRoute();
     const {category} = route.params;
     const [unfilteredData, setUnfilteredData] = useState([]);
     const [specialties, setSpecialties] = useState([]);
     useEffect(() => {
-        async function getCategoriesFromApi() {
+        async function getSpecialtiesFromApi() {
             const apiSpecialties = await listSpecialties(category.id);
             setUnfilteredData(apiSpecialties);
             setSpecialties(apiSpecialties);
         }
-        getCategoriesFromApi();
+        getSpecialtiesFromApi();
     }, []);
     const onSearchSpecialty = (specialtySearch) => {
         if (!specialtySearch) {
@@ -35,7 +36,7 @@ const SearchSpecialtyScreen = () => {
         setSpecialties(filteredSpecialties);
     };
     const renderSpecialty = ({item}) => (
-        <Card color={hexToRGBA(palette.lightBlue, 0.1)} style={styles.specialtyCard} rounded onPress={() => console.log('aqui')}>
+        <Card color={hexToRGBA(palette.lightBlue, 0.1)} style={styles.specialtyCard} rounded onPress={() => navigation.navigate('Specialists', {specialty: item})}>
             <View style={styles.specialtyCardContainer}>
                 <AppText weight="bold" size="l" color={palette.darkBlue} style={styles.specialtyText}>{item.name.toUpperCase()}</AppText>
                 <SalaVirtualIcon name="right" size={sizing.l} style={styles.specialtyIcon} color={palette.darkBlue} />
