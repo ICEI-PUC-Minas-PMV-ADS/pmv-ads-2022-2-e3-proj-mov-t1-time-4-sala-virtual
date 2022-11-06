@@ -1,8 +1,23 @@
 # Registro de Testes de Usabilidade
 
-Após realizar os testes de usabilidade, obtém-se um relatório a partir das análises realizadas. O Registro de Testes de Usabilidade é um relatório que contém as evidências dos testes e relatos dos usuários participantes, baseado no Plano de Testes de Usabilidade desenvolvido para os casos de uso desta etapa.
+O primeiro teste de usabilidade aplicado foi o teste das 10 Heurísticas de Nielsen conforme previsto do plano de Teste de Usabilidade do projeto. Foram analisadas as seguintes telas:
+- Tela de login (RF-01);
+- Tela de cadastro de cliente (RF-02); 
+- Tela de cadastro de especialista(RF-03);
+- Telas de Recuperação de senha: tela de envio de email e tela de redefinição - (RF-04);
+- Telas de edição de dados cadastrais: tela de conta e tela de edite seu perfil (RF-05). 
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Registro de Testes de Usabilidade”.
+A seguir os resultados:
 
-> **Links Úteis**:
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+| Critérios Heurísticos  | RF-01-Tela de Login | RF-02-03-Telas de Cadastro de Cliente e Especialista | RF-04-Telas de Recuperação de Senha (envio de email e redefinição)  | RF-05-Tela de Edição de Perfil (Conta e Edite seu perfil) | 
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| **1-Visibilidade do Status do Sistema** | Atendido. Os elementos de uma tela de login são apresentados aos usuários  | Refação. Foi identificado que falta uma referência para o usuário saber em qual tela de cadastro ele se encontra. Sugerido a inserção de um titulo no topo da página  | Atendido. É apresentado ao usuário através de texto  | Atendido. Os títulos das páginas garantem a orientação  |
+| **2-Correspondência entre o sistema e o mundo real**  | Atendido. O design dos componentes é bastante similar ao encontrado em outras aplicações.  | Atendido. Os componentes também são similares ao de outras aplicações  | Atendido. Os componentes também são similares ao de outras aplicações  | Atendido. Os componentes também são similares ao de outras aplicações  |
+| **3-Controle e liberdade para o usuário** | Atendido. Os elementos que permitem ações do usuário estão bem definidos  | Atendido. Os elementos que permitem ações do usuário estão bem definidos  | Atendido. Os elementos que permitem ações do usuário estão bem definidos  | Atendido. Os elementos que permitem ações do usuário estão bem definidos, assim como os que a edição não é permitida.   |
+| **4-Consistência e padronização**  | Atendido. O esquema de cores e disposição dos componentes permite a identificação de cada tipo de ação possível  | Atendido.  O esquema de cores, a disposição dos componentes e o design dos mesmos são equivalentes às demais telas  | Atendido.  O esquema de cores, a disposição dos componentes e o design dos mesmos são equivalentes às demais telas  | Atendido.  O esquema de cores, a disposição dos componentes e o design dos mesmos são equivalentes às demais telas  |
+| **5-Prevenção de erros**  | Atendido. A validação do formulário garante que ele não envie sem os requisitos obrigatórios.  | Atendido. A validação do formulário garante que ele não envie sem os requisitos obrigatórios.  | Atendido. A validação do formulário garante que ele não envie sem os requisitos obrigatórios.  | Atendido. A validação do formulário garante que ele não envie sem os requisitos obrigatórios.  |
+| **6-Reconhecimento em vez de recordação**  | Atendido. Apenas as informações relevantes ao processo de login estão na tela.  | Atendido. Apenas as informações relevantes ao cadastro estão na tela.  | Atendido. Apenas as informações necessárias para recuperação da senha estão dispostas  | Atendido. Apenas as informações com os dados do usuário, com destaque aos que permitem edição estão disponíveis  |
+| **7-Eficiência e flexibilidade de uso**  | Atendido. Os componente apresentam informações diretas de suas ações.  | Atendido. Os componentes orientam quais as ações relativas aos mesmos  | Atendido. Há um texto orientando o usuário sobre as ações necessárias.  | Atendido. A orientação de ações disponíveis é feita principalmente pelo esquema de cores, que segue o padrão de diversas aplicações  |
+ **8-Estética e design minimalista**  | Atendido. A tela de login é clean, apenas com elementos relevantes | Atendido. A tela é clean com o placeholder também executando função de label e reduzindo a quantidade de informação.  | Atendido. A tela é clean, apenas com componentes fundamentais para a recuperação da senha  | Atendido. A tela é clean, apenas com os elementos correspondentes as informações de perfil do usuário  |
+| **9-Ajude os usuários a reconhecer, diagnosticar e recuperar erros**  | Atendido. A validação do formulário garante que se cumpra os requisitos de cada campo.  | Atendido. A validação do formulário garante que se cumpra os requisitos de cada campo.  | Atendido. A validação do formulário garante que se cumpra os requisitos de cada campo.  | Atendido. A validação do formulário garante que se cumpra os requisitos de cada campo.  |
+| **10-Ajuda e documentação**  | Não se aplica (Há uma tela específica no projeto com essa finalidade).  | Não se aplica (Há uma tela específica no projeto com essa finalidade).  | Não se aplica (Há uma tela específica no projeto com essa finalidade).  | CNão se aplica (Há uma tela específica no projeto com essa finalidade).  |
