@@ -18,21 +18,16 @@ const BIRTHDATE_MASK = '99/99/9999';
 
 const EditAccountScreen = () => {
     const { state } = useAuth();
-
     const EditAccountSchema = Yup.object().shape({
         name: Yup.string()
             .required('Preencha este campo.'),
-    })
+    });
     const navigation = useNavigation();
     const onEditProfileSubmit = async (values, { setSubmitting }) => {
         setSubmitting(true);
-        navigation.navigate('Home');
+        navigation.popToTop();
         setSubmitting(false);
-    }
-    const redefinePassword = () => {
-        navigation.navigate('Home');
-    }
-
+    };
     return (
         <ScreenWrapper >
             <ScrollView>
@@ -63,7 +58,7 @@ const EditAccountScreen = () => {
                         {state.user.name}
                     </AppText>
                 </View>
-                <Formik initialValues={{ name: '' }}
+                <Formik initialValues={{ name: state.user.name }}
                     validationSchema={EditAccountSchema}
                     onSubmit={async (values, { setSubmitting, setFieldError }) => {
                         await onEditProfileSubmit(values, { setSubmitting, setFieldError });
@@ -72,7 +67,7 @@ const EditAccountScreen = () => {
                         <>
                             <View style={styles.formContainer}>
                                 <InputLabel
-                                    placeholder={state.user.name}
+                                    placeholder={'Nome'}
                                     value={values.name}
                                     onChangeText={handleChange('name')}
                                     onBlur={handleBlur('name')}
@@ -90,7 +85,7 @@ const EditAccountScreen = () => {
                                 />
 
                                 <InputLabel
-                                    value={(state.user.birthDate.split("-").reverse().join("-"))}
+                                    value={(state.user.birthDate.split('-').reverse().join('-'))}
                                     disabled
                                     mask={BIRTHDATE_MASK}
                                 />
@@ -114,14 +109,14 @@ const EditAccountScreen = () => {
                         labelColor={palette.lightBlue}
                         labelWeight="bold"
                         muted
-                        onPress={redefinePassword}
+                        onPress={() => navigation.navigate('NewPassword')}
                     />
                 </View>
             </ScrollView>
         </ScreenWrapper>
 
-    )
-}
+    );
+};
 
 
 const styles = StyleSheet.create({
