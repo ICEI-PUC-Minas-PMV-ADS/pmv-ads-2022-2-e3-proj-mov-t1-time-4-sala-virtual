@@ -1,13 +1,11 @@
 import React from 'react';
-import {StyleSheet, Pressable, Text} from 'react-native';
-
-import Icon from 'react-native-vector-icons/MaterialIcons';
-
-import {sizing} from '../styles/sizing';
-import {fonts} from '../styles/fonts';
-import {hexToRGBA} from '../helpers/hexToRGBA';
+import { StyleSheet, Pressable, Text } from 'react-native';
+import { sizing } from '../styles/sizing';
+import { fonts } from '../styles/fonts';
+import { hexToRGBA } from '../helpers/hexToRGBA';
 
 const Button = props => {
+  const SalaVirtualIcon = fonts.icons;
   const {
     style,
     label,
@@ -19,6 +17,7 @@ const Button = props => {
     onPress,
     icon,
     muted,
+    iconSize,
   } = props;
   let _handleButtonPress = async () => {
     if (onPress) {
@@ -27,7 +26,7 @@ const Button = props => {
   };
   return (
     <Pressable
-      style={({pressed}) => [
+      style={({ pressed }) => [
         styles.button,
         {
           borderColor: muted ? 'transparent' : (!outline
@@ -46,23 +45,25 @@ const Button = props => {
       ]}
       onPress={_handleButtonPress}>
       {icon && (
-        <Icon
-          style={[styles.iconStyle, {color: labelColor}]}
-          name={icon}
-          size={sizing.l}
+        <SalaVirtualIcon
+          style={[(!label ? {} : styles.iconStyle), { color: labelColor }]}
+          name={icon}         
+          size={iconSize ?? sizing.l}
         />
       )}
-      <Text
-        style={[
-          styles.labelText,
-          {
-            color: labelColor,
-            fontFamily: fonts.sans.normal[labelWeight ?? 'regular'],
-            fontSize: fonts.sizing[labelSize ?? 'm'],
-          },
-        ]}>
-        {label}
-      </Text>
+      {label && (
+        <Text
+          style={[
+            styles.labelText,
+            {
+              color: labelColor,
+              fontFamily: fonts.sans.normal[labelWeight ?? 'regular'],
+              fontSize: fonts.sizing[labelSize ?? 'm'],
+            },
+          ]}>
+          {label}
+        </Text>
+      )}
     </Pressable>
   );
 };

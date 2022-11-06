@@ -5,20 +5,19 @@ import ItemSeparator from './ItemSeparator';
 import {palette} from '../styles/palette';
 
 const GenericSearch = props => {
-	/*const {
+	const {
 		onSearch,
-     } = props;*/
+	} = props;
 	return (
 		<View style={styles.searchContainer}>
 			<ItemSeparator size="xl" />
-			<InputLabel placeholder="Busca" icon="search" iconColor={palette.black} />
+			<InputLabel placeholder="Busca" onChangeText={onSearch} icon="search" iconColor={palette.black} />
 		</View>
 	)
 };
 
 const styles = StyleSheet.create({
 	searchContainer: {
-        width: '100%'
 	},
 });
 
