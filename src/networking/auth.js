@@ -48,3 +48,47 @@ export async function listSpecialties(categoryId) {
         throw errHandler(e);
     }
 }
+
+export async function listSpecialists(specialtyId) {
+    // try {
+    return [
+        {
+            id: 1,
+            name: 'Pedro',
+            specialtyId: true,
+        },
+        {
+            id: 2,
+            name: 'Davison',
+            specialtyId: true,
+        },
+        {
+            id: 3,
+            name: 'Brunna',
+            specialtyId: false,
+        },
+        {
+            id: 4,
+            name: 'Sabrina',
+            specialtyId: false,
+        },
+        {
+            id: 5,
+            name: 'Mateus',
+            specialtyId: false,
+        },
+        {
+            id: 6,
+            name: 'Paloma',
+            specialtyId: true,
+        },
+        {
+            id: 7,
+            name: 'Arthur',
+            specialtyId: false,
+        },
+    ].filter(specialist => specialist.specialtyId === (specialtyId % 2 === 0));
+    // } catch (e) {
+    //     throw errHandler(e);
+    // }
+}
