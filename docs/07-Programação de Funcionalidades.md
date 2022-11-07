@@ -15,11 +15,11 @@ Atendendo ao requisito funcional 004 (O aplicativo deve fornecer uma opção de 
 O registro do processo pode ser visto no vídeo presente no link a seguir: https://youtu.be/vtNJtTCkTsY
 
 
-## - Tela de cadastro do especialista 
+## - Tela de cadastro do especialista - Davison Cavalcante Barros
 
 A tela de cadastro de especialista corresponde ao requisito funcional 003 (O aplicativo deve fornecer um formulário de cadastro para especialistas.). Nessa tela o especialista irá fornecer seus dados para ser cadastrado na plataforma, diferenciando o número do CNPJ, o qual o especialista deve possuir. 
 
-## - Tela de Busca por especialidades
+## - Tela de Busca por especialidades - Davison Cavalcante Barros
 
 A tela de busca por especialidades corresponde ao requisito funcional 010 (O aplicativo deve fornecer uma tela de listagem de especialidades para filtrar especialistas.). Nessa tela as especialidades são filtradas a partir da categoria selecionada, permitindo o usuário selecionar a especialidade que deseja buscar e ver os especialistas cadastrados para aquela especialidade cadastrados na plataforma.
 
