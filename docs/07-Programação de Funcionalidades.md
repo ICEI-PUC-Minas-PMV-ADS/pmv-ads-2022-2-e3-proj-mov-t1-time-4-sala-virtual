@@ -30,3 +30,8 @@ A demonstração das telas de `Tela de cadastro do especialista` e `Tela de Busc
 A tela inicial do cliente atende ao requisito funcional RF-008 (O aplicativo deve fornecer uma tela inicial para clientes, contendo suas próximas consultas), cuja prioridade é alta, contendo um card referente a próxima consulta, com os dados do especialista, a especialidade, o horário/data e a duração da reunião. O cliente pode realizar o cancelamento ou entrar na próxima reunião por esta tela. Abaixo do card encontra-se um banner que redireciona o cliente para a tela de busca por especialidades. 
 
 O vídeo-apresentação referente a tela em questão pode ser visto no link: https://www.youtube.com/watch?v=kPXU6ETEZCs
+
+## - Tela de Redefinição de Senha - Arthur Alves Rocha de Souza
+
+A tela de redefinição de senha correspodente ao requisito funcional 004 (O aplicativo deve fornecer uma opção de redefinição de senha.). A tela oferece ao usuário um formulário para preenchimento da nova senha, confirmação da nova senha e um botão para entrar no aplicativo. Também foram implementados a validação desse formulário. 
+A demonstração da tela em funcionamento está acessível no link: https://youtu.be/1VDbI7QkCVQ
