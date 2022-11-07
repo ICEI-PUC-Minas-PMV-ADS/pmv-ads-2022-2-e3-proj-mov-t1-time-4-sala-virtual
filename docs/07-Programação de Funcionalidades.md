@@ -8,6 +8,13 @@ A demonstração da tela em funcionamento está acessível no link: https://yout
 
 ![Demonstração](img/PF-Login.jpeg)
 
+## Tela Esqueci Minha Senha - Paloma Chaves Silva
+
+Atendendo ao requisito funcional 004 (O aplicativo deve fornecer uma opção de redefinição de senha), foi desenvolvida a tela "Esqueci minha senha". A tela é acessada por meio do botão "Esqueci minha senha". A tela possui a logomarca do aplicativo seguida de um texto com instruções para a redefinição da senha. Deve-se incluir o email cadastrado na plataforma. Se ele passar pela validação, quando o usuário pressionar o botão "Enviar", ele será direcionado para a tela que dá seguimento ao processo de redefinição da senha.
+
+O registro do processo pode ser visto no vídeo presente no link a seguir: https://youtu.be/vtNJtTCkTsY
+
+
 ## - Tela de cadastro do especialista 
 
 A tela de cadastro de especialista corresponde ao requisito funcional 003 (O aplicativo deve fornecer um formulário de cadastro para especialistas.). Nessa tela o especialista irá fornecer seus dados para ser cadastrado na plataforma, diferenciando o número do CNPJ, o qual o especialista deve possuir. 
