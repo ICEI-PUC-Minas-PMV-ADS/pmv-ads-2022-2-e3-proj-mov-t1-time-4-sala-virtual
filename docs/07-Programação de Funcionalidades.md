@@ -8,3 +8,25 @@ A demonstração da tela em funcionamento está acessível no link: https://yout
 
 ![Demonstração](img/PF-Login.jpeg)
 
+## Tela Esqueci Minha Senha - Paloma Chaves Silva
+
+Atendendo ao requisito funcional 004 (O aplicativo deve fornecer uma opção de redefinição de senha), foi desenvolvida a tela "Esqueci minha senha". A tela é acessada por meio do botão "Esqueci minha senha". A tela possui a logomarca do aplicativo seguida de um texto com instruções para a redefinição da senha. Deve-se incluir o email cadastrado na plataforma. Se ele passar pela validação, quando o usuário pressionar o botão "Enviar", ele será direcionado para a tela que dá seguimento ao processo de redefinição da senha.
+
+O registro do processo pode ser visto no vídeo presente no link a seguir: https://youtu.be/vtNJtTCkTsY
+
+
+## - Tela de cadastro do especialista - Davison Cavalcante Barros
+
+A tela de cadastro de especialista corresponde ao requisito funcional 003 (O aplicativo deve fornecer um formulário de cadastro para especialistas.). Nessa tela o especialista irá fornecer seus dados para ser cadastrado na plataforma, diferenciando o número do CNPJ, o qual o especialista deve possuir. 
+
+## - Tela de Busca por especialidades - Davison Cavalcante Barros
+
+A tela de busca por especialidades corresponde ao requisito funcional 010 (O aplicativo deve fornecer uma tela de listagem de especialidades para filtrar especialistas.). Nessa tela as especialidades são filtradas a partir da categoria selecionada, permitindo o usuário selecionar a especialidade que deseja buscar e ver os especialistas cadastrados para aquela especialidade cadastrados na plataforma.
+
+A demonstração das telas de `Tela de cadastro do especialista` e `Tela de Busca por especialidades` está acessivel no link: https://youtu.be/Zhbo5hDS9Js
+
+## - Tela Inicial do Cliente - Sabrina Chaves Silva
+
+A tela inicial do cliente atende ao requisito funcional RF-008 (O aplicativo deve fornecer uma tela inicial para clientes, contendo suas próximas consultas), cuja prioridade é alta, contendo um card referente a próxima consulta, com os dados do especialista, a especialidade, o horário/data e a duração da reunião. O cliente pode realizar o cancelamento ou entrar na próxima reunião por esta tela. Abaixo do card encontra-se um banner que redireciona o cliente para a tela de busca por especialidades. 
+
+O vídeo-apresentação referente a tela em questão pode ser visto no link: https://www.youtube.com/watch?v=kPXU6ETEZCs
