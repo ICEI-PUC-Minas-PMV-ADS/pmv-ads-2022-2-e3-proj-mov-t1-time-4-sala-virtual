@@ -25,3 +25,8 @@ A tela de busca por especialidades corresponde ao requisito funcional 010 (O apl
 
 A demonstração das telas de `Tela de cadastro do especialista` e `Tela de Busca por especialidades` está acessivel no link: https://youtu.be/Zhbo5hDS9Js
 
+## - Tela Inicial do Cliente - Sabrina Chaves Silva
+
+A tela inicial do cliente atende ao requisito funcional RF-008 (O aplicativo deve fornecer uma tela inicial para clientes, contendo suas próximas consultas), cuja prioridade é alta, contendo um card referente a próxima consulta, com os dados do especialista, a especialidade, o horário/data e a duração da reunião. O cliente pode realizar o cancelamento ou entrar na próxima reunião por esta tela. Abaixo do card encontra-se um banner que redireciona o cliente para a tela de busca por especialidades. 
+
+O vídeo-apresentação referente a tela em questão pode ser visto no link: https://www.youtube.com/watch?v=kPXU6ETEZCs
