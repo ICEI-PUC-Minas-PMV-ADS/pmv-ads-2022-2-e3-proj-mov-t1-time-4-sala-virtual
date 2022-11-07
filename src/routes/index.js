@@ -83,7 +83,7 @@ const Tab = () => {
       })}>
       <BottomTab.Screen name="Home" component={HomeScreen} options={{headerShown: false}} />
       <BottomTab.Screen name="Search" component={SearchScreen} />
-      <BottomTab.Screen name="Meeting" component={MeetingScreen} />
+      <BottomTab.Screen name="Meeting" component={MeetingScreen} options={{headerShown: false}}/>
       <BottomTab.Screen name="Account" component={AccountStackScreen} options={{headerShown: false}} />
     </BottomTab.Navigator>
   );
