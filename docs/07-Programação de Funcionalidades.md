@@ -35,3 +35,9 @@ O vídeo-apresentação referente a tela em questão pode ser visto no link: htt
 
 A tela de redefinição de senha correspodente ao requisito funcional 004 (O aplicativo deve fornecer uma opção de redefinição de senha.). A tela oferece ao usuário um formulário para preenchimento da nova senha, confirmação da nova senha e um botão para entrar no aplicativo. Também foram implementados a validação desse formulário. 
 A demonstração da tela em funcionamento está acessível no link: https://youtu.be/1VDbI7QkCVQ
+
+## - Tela de Ajuste de Conta - Pedro Thiago Rodrigues Santos
+
+A tela de Ajustes de Conta desempenha a função de aninhar as telas de gerencionamento da conta do usuário. Ela funciona como meio de navegação entre as respectivas telas. A tela de ajuste também conta com a função de sair do aplicativo atendendo ao  requisito funcional RF-007 (O aplicativo deve permitir fazer logout).
+
+O video da explicação e demonstração do funcionamento da tela pode ser acessado através do link: https://www.youtube.com/watch?v=p8wWDVSXKbY
