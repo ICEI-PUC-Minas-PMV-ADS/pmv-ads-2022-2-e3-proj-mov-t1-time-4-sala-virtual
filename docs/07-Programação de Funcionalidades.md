@@ -41,3 +41,6 @@ A demonstração da tela em funcionamento está acessível no link: https://yout
 A tela de Ajustes de Conta desempenha a função de aninhar as telas de gerencionamento da conta do usuário. Ela funciona como meio de navegação entre as respectivas telas. A tela de ajuste também conta com a função de sair do aplicativo atendendo ao  requisito funcional RF-007 (O aplicativo deve permitir fazer logout).
 
 O video da explicação e demonstração do funcionamento da tela pode ser acessado através do link: https://www.youtube.com/watch?v=p8wWDVSXKbY
+
+## - Tela de Edição de Perfil - Brunna Alves Lage Silva
+A tela de edição de perfil do cliente que corresponde ao requisito funcional 005. Nela é permitido ao usuário a alteração do nome e da imagem de perfil e redireciona para a redefinição de senha. Para o desenvolvimento da tela foram utilizados os componentes "input", "button" e a validação do formulário feita por meio da biblioteca Formik. Foram necessários algumas alterações no componente input para cumprir os requisitos da tela.  A explicação completa está disponível em: https://youtu.be/z671szB5dCE
