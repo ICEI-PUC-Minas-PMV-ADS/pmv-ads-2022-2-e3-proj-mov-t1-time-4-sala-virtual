@@ -44,3 +44,8 @@ O video da explicação e demonstração do funcionamento da tela pode ser acess
 
 ## - Tela de Edição de Perfil - Brunna Alves Lage Silva
 A tela de edição de perfil do cliente que corresponde ao requisito funcional 005. Nela é permitido ao usuário a alteração do nome e da imagem de perfil e redireciona para a redefinição de senha. Para o desenvolvimento da tela foram utilizados os componentes "input", "button" e a validação do formulário feita por meio da biblioteca Formik. Foram necessários algumas alterações no componente input para cumprir os requisitos da tela.  A explicação completa está disponível em: https://youtu.be/z671szB5dCE
+
+## - Tela de Nova Senha - Arthur Alves Rocha de Souza
+
+A tela de nova senha correspodente ao requisito funcional 004 (O aplicativo deve fornecer uma opção de redefinição de senha.). A tela oferece ao usuário um formulário para preenchimento da sua antiga senha, nova senha e confirmação da senha possui também um botão "enviar"  para realizar as alterações feitas. Também foram implementados a validação desse formulário. 
+A demonstração da tela em funcionamento está acessível no link: https://youtu.be/EbFsMHTpbNs
