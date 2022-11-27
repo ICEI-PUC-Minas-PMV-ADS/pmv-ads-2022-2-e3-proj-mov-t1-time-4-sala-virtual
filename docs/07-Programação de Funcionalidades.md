@@ -12,8 +12,7 @@ A demonstração da tela em funcionamento está acessível no link: https://yout
 
 Atendendo ao requisito funcional 004 (O aplicativo deve fornecer uma opção de redefinição de senha), foi desenvolvida a tela "Esqueci minha senha". A tela é acessada por meio do botão "Esqueci minha senha". A tela possui a logomarca do aplicativo seguida de um texto com instruções para a redefinição da senha. Deve-se incluir o email cadastrado na plataforma. Se ele passar pela validação, quando o usuário pressionar o botão "Enviar", ele será direcionado para a tela que dá seguimento ao processo de redefinição da senha.
 
-O registro do processo pode ser visto no vídeo presente no link a seguir: https://youtu.be/vtNJtTCkTsY
-
+O registro do processo pode ser visto no vídeo presente no link a seguir: https://youtu.be/1KbWXrAJSC4
 
 ## - Tela de cadastro do especialista - Davison Cavalcante Barros
 
