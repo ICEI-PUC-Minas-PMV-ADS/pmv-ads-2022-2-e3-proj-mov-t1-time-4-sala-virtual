@@ -15,14 +15,19 @@ Os testes seguirão com status de avaliação conforme a seguir:
 ### Descrição do teste:
 
 1 - Acessar a tela de cadastro de novo usuário no aplicativo;
+
 2 - Realizar o preenchimento dos campos necessários;
+
 3 - Observar se as validações dos campos estão de acordo com o esperado;
+
 4 - Cadastrar novos usuários;
+
 5 - Observar se o usuário consegue acessar a plataforma;
 
 ### Requisitos atendidos:
 
 1 - RF-002 - O aplicativo deve fornecer um formulário de cadastro para clientes.
+
 2 - RF-003 - O aplicativo deve fornecer um formulário de cadastro para especialistas.
 
 ## Teste de Login e logout (CT - 02):
