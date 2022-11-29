@@ -86,12 +86,13 @@ const ScheduleScreen = () => {
                             )}
                             {step === 2 && (
                                 <AppointmentInfo
-                                    title="Seu Agendamento"
+                                    title="Seu agendamento"
                                     specialist="Dra. Alice Costa"
-                                    specialty={specialty.name}
+                                    specialty="Cardiologia"
                                     date="10/10/2022"
                                     weekDay="terça-feira"
-                                    startEndHour="09:00 AM - 10:00 AM"
+                                    startHour="2022-12-08 09:00:00"
+                                    endHour="2022-12-08 10:00:00"
                                     duration="1 hora"
                                     reduced={true}
                                     rounded
