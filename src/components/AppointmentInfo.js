@@ -20,6 +20,7 @@ const AppointmentInfo = props => {
         weekDay,
         startEndHour,
         duration,
+        reduced,
     } = props;
 
     return (
@@ -101,29 +102,32 @@ const AppointmentInfo = props => {
                 </View>
             </View>
 
-            <ItemSeparator size="s" />
-
-            <View style={styles.buttonContainer}>
-                <Button
-                    label="Entrar"
-                    color={palette.blue}
-                    labelWeight="bold"
-                    labelSize="s"
-                    labelColor={palette.blue}
-                    outline={palette.blue}
-                    style={styles.button}
-                />
-                <ItemSeparator size="l" />
-                <Button
-                    label="Cancelar"
-                    color={palette.red}
-                    labelWeight="bold"
-                    labelSize="s"
-                    labelColor={palette.red}
-                    outline
-                    style={styles.button}
-                />
-            </View>
+            {!reduced && (
+                <View>
+                    <ItemSeparator size="s" />
+                    <View style={styles.buttonContainer}>
+                        <Button
+                            label="Entrar"
+                            color={palette.blue}
+                            labelWeight="bold"
+                            labelSize="s"
+                            labelColor={palette.blue}
+                            outline={palette.blue}
+                            style={styles.button}
+                        />
+                        <ItemSeparator size="l" />
+                        <Button
+                            label="Cancelar"
+                            color={palette.red}
+                            labelWeight="bold"
+                            labelSize="s"
+                            labelColor={palette.red}
+                            outline
+                            style={styles.button}
+                        />
+                    </View>
+                </View>
+            )}
         </View>
     );
 };

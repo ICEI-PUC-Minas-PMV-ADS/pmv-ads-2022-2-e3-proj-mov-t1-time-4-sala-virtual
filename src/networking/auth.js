@@ -116,3 +116,9 @@ export async function getSpecialist(specialistId) {
     //     throw errHandler(e);
     // }
 }
+
+export async function getScheduleByDate(specialistId, date) {
+    const mockedHours = [[8, 9], [9, 10], [11, 12], [13, 14], [14, 15], [16, 17]];
+    const mockedDate = new Date(date.setMinutes(0));
+    return mockedHours.map((schedule, index) => ({id: index, available: Math.floor(Math.random() * 20) > 4, startDate: new Date(mockedDate.setHours(schedule[0])), endDate: new Date(mockedDate.setHours(schedule[1]))}))
+}
