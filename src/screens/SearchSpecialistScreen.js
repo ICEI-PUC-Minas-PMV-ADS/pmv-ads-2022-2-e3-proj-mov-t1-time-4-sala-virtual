@@ -11,12 +11,13 @@ import {palette} from '../styles/palette';
 import ItemSeparator from '../components/ItemSeparator';
 import {hexToRGBA} from '../helpers/hexToRGBA';
 import {sizing} from '../styles/sizing';
-import {useRoute} from '@react-navigation/native';
+import {useNavigation, useRoute} from '@react-navigation/native';
 import {listSpecialists} from '../networking/auth';
 import Card from '../components/Card';
 import AppText from '../components/AppText';
 
 const SearchSpecialistScreen = () => {
+    const navigation = useNavigation();
     const route = useRoute();
     const {specialty} = route.params;
     const [unfilteredData, setUnfilteredData] = useState([]);
@@ -37,13 +38,14 @@ const SearchSpecialistScreen = () => {
         const filteredSpecialists = unfilteredData.filter(specialist => specialist.name.toLowerCase().includes(specialistSearch.toLowerCase()));
         setSpecialists(filteredSpecialists);
     };
+    const scheduleSpecialist = (specialist) => navigation.navigate('Schedule', {specialistId: specialist.id, specialty});
     const renderSpecialist = ({item}) => (
-        <Card color={hexToRGBA(palette.lightBlue, 0.1)} style={styles.specialistCard} rounded onPress={() => console.log('Aqui')}>
+        <Card color={hexToRGBA(palette.lightBlue, 0.1)} style={styles.specialistCard} rounded onPress={() => scheduleSpecialist(item)}>
             <View style={styles.specialistInfoContainer}>
                 <AppText size="s" color={palette.black}>{specialty.name.toUpperCase()}</AppText>
                 <AppText size="m" weight="bold" color={palette.darkBlue} style={styles.specialistText}>{item.name}</AppText>
                 <View style={styles.scheduleButtonContainer}>
-                    <Button label="Agendar" labelSize="m" color={palette.blue} labelColor={palette.white} labelWeight="bold" />
+                    <Button label="Agendar" labelSize="m" color={palette.blue} labelColor={palette.white} labelWeight="bold" onPress={() => scheduleSpecialist(item)} />
                 </View>
             </View>
             <Image style={styles.specialistImg} source={require('../assets/images/avatar.png')}></Image>

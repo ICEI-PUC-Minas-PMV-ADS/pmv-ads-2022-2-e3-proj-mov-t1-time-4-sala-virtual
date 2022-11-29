@@ -29,15 +29,15 @@ const HomeScreen = () => {
       </AppText>
       <ItemSeparator size="l" />
       <AppointmentInfo
-        title="Próxima Reunião"
-        specialist="Dra. Alice Costa"
-        specialty="Cardiologia"
-        date="10/10/2022"
-        weekDay="terça-feira"
-        startHour="2022-12-08 09:00:00"
-        endHour="2022-12-08 10:00:00"
-        duration="1 hora"
-        rounded
+          title="Próxima Reunião"
+          specialist="Dra. Alice Costa"
+          specialty="Cardiologia"
+          date="10/10/2022"
+          weekDay="terça-feira"
+          startHour="2022-12-08 09:00:00"
+          endHour="2022-12-08 10:00:00"
+          duration="1 hora"
+          rounded
       />
       <ItemSeparator size="l" />
       <Card

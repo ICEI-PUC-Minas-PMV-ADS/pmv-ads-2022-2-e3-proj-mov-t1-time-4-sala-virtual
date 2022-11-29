@@ -6,6 +6,7 @@ import SearchCategoryScreen from '../screens/SearchCategoryScreen';
 import SearchSpecialtyScreen from '../screens/SearchSpecialtyScreen';
 import SearchSpecialistScreen from '../screens/SearchSpecialistScreen';
 import MainHeader from '../components/MainHeader';
+import ScheduleScreen from '../screens/ScheduleScreen';
 
 const SearchStack = createNativeStackNavigator();
 
@@ -18,6 +19,8 @@ function getScreenTitle(route) {
         return 'Busca/Especialidades';
     case 'specialists':
         return 'Busca/Especialistas';
+    case 'schedule':
+        return 'Busca/Perfil Especialista';
     default:
         return route;
     }
@@ -38,6 +41,7 @@ const SearchStackScreen = () => {
             <SearchStack.Screen name="Search Main" component={SearchCategoryScreen} />
             <SearchStack.Screen name="Specialties" component={SearchSpecialtyScreen} />
             <SearchStack.Screen name="Specialists" component={SearchSpecialistScreen} />
+            <SearchStack.Screen name="Schedule" component={ScheduleScreen} />
         </SearchStack.Navigator>
     );
 };

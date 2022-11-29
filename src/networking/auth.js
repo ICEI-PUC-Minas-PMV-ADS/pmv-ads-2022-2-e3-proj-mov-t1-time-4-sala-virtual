@@ -49,46 +49,76 @@ export async function listSpecialties(categoryId) {
     }
 }
 
+const mockedSpecialists = [
+    {
+        id: 1,
+        name: 'Pedro',
+        image: null,
+        bio: 'Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type',
+        isEven: true,
+    },
+    {
+        id: 2,
+        name: 'Davison',
+        image: null,
+        bio: 'Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type',
+        isEven: true,
+    },
+    {
+        id: 3,
+        name: 'Brunna',
+        image: null,
+        bio: 'Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type',
+        isEven: false,
+    },
+    {
+        id: 4,
+        name: 'Sabrina',
+        image: null,
+        bio: 'Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type',
+        isEven: false,
+    },
+    {
+        id: 5,
+        name: 'Mateus',
+        image: null,
+        bio: 'Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type',
+        isEven: false,
+    },
+    {
+        id: 6,
+        name: 'Paloma',
+        image: null,
+        bio: 'Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type',
+        isEven: true,
+    },
+    {
+        id: 7,
+        name: 'Arthur',
+        image: null,
+        bio: 'Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type',
+        isEven: false,
+    },
+];
+
 export async function listSpecialists(specialtyId) {
     // try {
-    return [
-        {
-            id: 1,
-            name: 'Pedro',
-            specialtyId: true,
-        },
-        {
-            id: 2,
-            name: 'Davison',
-            specialtyId: true,
-        },
-        {
-            id: 3,
-            name: 'Brunna',
-            specialtyId: false,
-        },
-        {
-            id: 4,
-            name: 'Sabrina',
-            specialtyId: false,
-        },
-        {
-            id: 5,
-            name: 'Mateus',
-            specialtyId: false,
-        },
-        {
-            id: 6,
-            name: 'Paloma',
-            specialtyId: true,
-        },
-        {
-            id: 7,
-            name: 'Arthur',
-            specialtyId: false,
-        },
-    ].filter(specialist => specialist.specialtyId === (specialtyId % 2 === 0));
+    return mockedSpecialists.filter(specialist => specialist.isEven === (specialtyId % 2 === 0));
     // } catch (e) {
     //     throw errHandler(e);
     // }
+}
+
+export async function getSpecialist(specialistId) {
+    // try {
+    return mockedSpecialists.find(specialist => specialist.id === specialistId);
+    // } catch (e) {
+    //     throw errHandler(e);
+    // }
+}
+
+export async function getScheduleByDate(specialistId, date) {
+    const mockedHours = [[8, 9], [9, 10], [11, 12], [13, 14], [14, 15], [16, 17]];
+    const mockedDate = new Date(date.setMinutes(0));
+    return mockedHours.map((schedule, index) => ({id: index, available: Math.floor(Math.random() * 20) > 4, startDate: new Date(mockedDate.setHours(schedule[0])), endDate: new Date(mockedDate.setHours(schedule[1]))}))
 }
