@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {StyleSheet, View, Image, Platform} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import ScreenWrapper from '../components/ScreenWrapper';
@@ -12,12 +12,21 @@ import {fonts} from '../styles/fonts';
 
 import AppointmentInfo from '../components/AppointmentInfo';
 import {sizing} from '../styles/sizing';
+import {getClosestScheduledAppointment} from '../networking/auth';
 
 const SalaVirtualIcon = fonts.icons;
 
 const HomeScreen = () => {
   const navigation = useNavigation();
   const {state} = useAuth();
+  const [closestAppointment, setClosestAppointment] = useState(null);
+  useEffect(() => {
+    async function getClosestScheduledAppointmentFromApi() {
+      const closestAppointmentFromApi = await getClosestScheduledAppointment();
+      setClosestAppointment(closestAppointmentFromApi);
+    }
+    getClosestScheduledAppointmentFromApi();
+  })
   return (
     <ScreenWrapper scroll>
       {Platform.OS === 'android' && (
@@ -28,18 +37,19 @@ const HomeScreen = () => {
         Olá, {state.user.name}!
       </AppText>
       <ItemSeparator size="l" />
-      <AppointmentInfo
-          title="Próxima Reunião"
-          specialist="Dra. Alice Costa"
-          specialty="Cardiologia"
-          date="10/10/2022"
-          weekDay="terça-feira"
-          startHour="2022-12-08 09:00:00"
-          endHour="2022-12-08 10:00:00"
-          duration="1 hora"
-          rounded
-      />
-      <ItemSeparator size="l" />
+      {closestAppointment && (
+          <View>
+            <AppointmentInfo
+                title="Próxima Reunião"
+                specialist={closestAppointment.specialist}
+                specialty={closestAppointment.specialty}
+                startDate={closestAppointment.startDate}
+                endDate={closestAppointment.endDate}
+                rounded
+            />
+            <ItemSeparator size="l" />
+          </View>
+      )}
       <Card
         onPress={() => navigation.navigate('Search')}
         style={styles.bannerContainer}

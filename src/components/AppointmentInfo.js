@@ -8,6 +8,7 @@ import {sizing} from '../styles/sizing';
 import ItemSeparator from './ItemSeparator';
 import LineSeparator from './LineSeparator';
 import {fonts} from '../styles/fonts';
+import {get12HourFromDate, getDiffInHours, getLocalizedDate, getWeekDayFromDate} from '../helpers/date';
 
 const SalaVirtualIcon = fonts.icons;
 
@@ -16,14 +17,10 @@ const AppointmentInfo = props => {
     title,
     specialist,
     specialty,
-    date,
-    weekDay,
-    startHour,
-    endHour,
-    duration,
+    startDate,
+    endDate,
     reduced,
   } = props;
-
   return (
     <View style={styles.container}>
       {title && (
@@ -70,10 +67,10 @@ const AppointmentInfo = props => {
         <ItemSeparator size="l" />
         <View style={styles.textContainer}>
           <AppText style={styles.infoHeader} weight="bold" size="s">
-            {date}
+            {getLocalizedDate(startDate)}
           </AppText>
           <AppText color={palette.gray} size="xs">
-            {weekDay}
+            {getWeekDayFromDate(startDate).toLowerCase()}
           </AppText>
         </View>
       </View>
@@ -95,10 +92,10 @@ const AppointmentInfo = props => {
         <ItemSeparator size="l" />
         <View style={styles.textContainer}>
           <AppText style={styles.infoHeader} weight="bold" size="s">
-            {`${startHour.slice(-8, -3)} - ${endHour.slice(-8, -3)}`}
+            {`${get12HourFromDate(startDate)} - ${get12HourFromDate(endDate)}`}
           </AppText>
           <AppText color={palette.gray} size="xs">
-            {duration}
+            {getDiffInHours(startDate, endDate)}
           </AppText>
         </View>
       </View>

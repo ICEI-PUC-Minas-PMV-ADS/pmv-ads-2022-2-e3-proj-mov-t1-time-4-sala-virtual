@@ -122,3 +122,21 @@ export async function getScheduleByDate(specialistId, date) {
     const mockedDate = new Date(date.setMinutes(0));
     return mockedHours.map((schedule, index) => ({id: index, available: Math.floor(Math.random() * 20) > 4, startDate: new Date(mockedDate.setHours(schedule[0])), endDate: new Date(mockedDate.setHours(schedule[1]))}))
 }
+
+const mockedSchedule = [
+    {
+        id: 1,
+        specialist: 'Mateus Melo',
+        specialty: 'Violão',
+        startDate: '2022-12-04 20:00:00',
+        endDate: '2022-12-04 21:00:00',
+    }
+];
+
+export async function getScheduledAppointments() {
+    return mockedSchedule;
+}
+
+export async function getClosestScheduledAppointment() {
+    return mockedSchedule.sort((a, b) => (a.startDate > b.startDate) ? 1 : ((b.startDate > a.startDate) ? -1 : 0))?.[0] ?? null;
+}
